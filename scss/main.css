@@ -112,17 +112,31 @@ header {
   font-size: 0.8rem;
   padding: 0 1rem; }
 
+.carousel-control-icon {
+  background: none; }
+
+.carousel-control-icon path {
+  fill: #fde428; }
+
+.carousel-control-next:hover .carousel-control-icon path,
+.carousel-control-prev:hover .carousel-control-icon path {
+  fill: #ffffff;
+  opacity: 1; }
+
 .carousel-control-prev-icon {
-  height: 1.5rem;
-  line-height: 2em;
-  background-image: url(../img/icon--long-arrow-pointing-to-left.svg); }
+  height: 1.5rem; }
 
 .carousel-control-next-icon {
-  height: 1.5rem;
-  background-image: url(../img/icon--long-arrow-pointing-to-the-right.svg); }
+  height: 1.5rem; }
 
 .carousel-control-prev {
   left: 22.4rem;
+  color: #fde428;
+  opacity: 1; }
+
+.carousel-control-next {
+  left: 29.8rem;
+  right: inherit;
   color: #fde428;
   opacity: 1; }
 
@@ -130,12 +144,7 @@ header {
 .carousel-control-next:hover,
 .carousel-control-prev:focus,
 .carousel-control-prev:hover {
-  color: #ffffff; }
-
-.carousel-control-next {
-  left: 29.8rem;
-  right: inherit;
-  color: #fde428;
+  color: #ffffff;
   opacity: 1; }
 
 .sr-only {
