@@ -214,18 +214,23 @@ header{
         line-height: 1;
     }
     .carousel-caption a {
-        font-size: 21px;
+        font-size: 1.3rem;
         font-family: "Montserrat";
         color: $yellow;
         font-weight: bold;
         line-height: 2.429; 
         text-transform: uppercase;
-        text-decoration: underline;
+        border-bottom: 2px solid transparent;
     }
     .carousel-caption a:hover{
         color:$white;
+        border-bottom: 2px solid $white;
+        text-decoration: none;
     }
 }
+.dropdown-menu{
+    background-color:transparent;
+    }
   
 
 

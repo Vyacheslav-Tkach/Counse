@@ -177,14 +177,19 @@ header {
   font-weight: bold;
   line-height: 1; }
 .header-slider .carousel-caption a {
-  font-size: 21px;
+  font-size: 1.3rem;
   font-family: "Montserrat";
   color: #fde428;
   font-weight: bold;
   line-height: 2.429;
   text-transform: uppercase;
-  text-decoration: underline; }
+  border-bottom: 2px solid transparent; }
 .header-slider .carousel-caption a:hover {
-  color: #ffffff; }
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  text-decoration: none; }
+
+.dropdown-menu {
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */
