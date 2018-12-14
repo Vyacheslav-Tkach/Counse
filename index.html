@@ -1,120 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Counsel</title>
-    <!--favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../www/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../www/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../www/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../www/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../www/img/favicon/safari-pinned-tab.svg" color="#003366">
-    <meta name="msapplication-TileColor" content="#003366">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ff0000">   
-    <!--Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet"> 
-    <!--css-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!--js-->
-    <script src="js/jquery-3.3.1.min.js" defer></script>
-    <script src="js/popper.min.js" defer></script>
-    <script src="js/bootstrap.min.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Counsel</title>
+	<!--favicons-->
+	<link rel="apple-touch-icon" sizes="180x180" href="../www/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../www/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../www/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../www/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="../www/img/favicon/safari-pinned-tab.svg" color="#003366">
+	<meta name="msapplication-TileColor" content="#003366">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ff0000">   
+	<!--Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet"> 
+	<!--css-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="scss/main.css">
+	<!--js-->
+	<script src="js/jquery-3.3.1.min.js" defer></script>
+	<script src="js/popper.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-3">
-                        <div class="logo">
-                           
-                   
-                            <p>own your course</p>
-                        </div>
-                </div>
-                <div class="col-7">
-                    <div class="novigation">
-                        <ul class="navigation_list navigation_list--header">
-                            <li class="navigation__item"><a href="">About</a></li>
-                            <li class="navigation__item"><a href="">Services</a></li>
-                            <li class="navigation__item"><a href="">Why we best</a></li>
-                            <li class="navigation__item"><a href="">Testimonials</a></li>
-                            <li class="navigation__item"><a href="">Contact</a></li>
-                         </ul>
-                    </div>
-                </div>
-                <div class="col-1">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="img/icon--flag-united-kingdom.svg" alt="img_languages">
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">French</a>
-                            <a class="dropdown-item" href="#">Russian</a>
-                            <a class="dropdown-item" href="#">Ukrainian</a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </header>
-    <div class="header-slider">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                        <img src="img/background-top.png" alt="first_slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h1>Consumer Products Consulting</h1>
-                          <p>Learn more</p>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                        <img src="img/background-top.png" alt="second_slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h1>Consumer Products Consulting</h1>
-                          <p>Learn more</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-						<img src="img/background-top.png" alt="third_slide">
-						<div class="carousel-caption d-none d-md-block">
-						  <h1>Consumer Products Consulting</h1>
-                          <p>Learn more</p>
+	<div class="site"> 
+		<div class="header-wraper">
+			<header>
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-3">
+							<div class="logo">
+								<img src="img/logo.svg"alt="">
+								<!-- <h3>Counsel</h3>
+								<p>own your course</p> -->
+							</div>
 						</div>
-					  </div>
+					<div class="col-8 offset-md-1">
+						<div class="novigation">
+							<ul class="navigation_list navigation_list--header">
+								<li class="navigation__item"><a href="">About</a></li>
+								<li class="navigation__item"><a href="">Services</a></li>
+								<li class="navigation__item"><a href="">Why we best</a></li>
+								<li class="navigation__item"><a href="">Testimonials</a></li>
+								<li class="navigation__item"><a href="">Contact</a></li>
+								<li class="navigation__item">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<img src="img/icon--flag-united-kingdom.svg" alt="img_languages">
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">French</a>
+											<a class="dropdown-item" href="#">Russian</a>
+											<a class="dropdown-item" href="#">Ukrainian</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</header>
+		<div class="header-slider">
+			<div class="wrap">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/background-top.png" alt="first_slide">
+							<div class="carousel-caption">
+								<div class="col-6 offset-md-6">
+									<h1>Consumer Products Consulting</h1>
+									<a href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="img/background-top.png" alt="second_slide">
+							<div class="carousel-caption">
+								<div class="col-6 offset-md-6">
+									<h1>Consumer Products Consulting</h1>
+									<a href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="img/background-top.png" alt="third_slide">
+							<div class="carousel-caption">
+								<div class="col-6 offset-md-6">
+									<h1>Consumer Products Consulting</h1>
+									<a href="#">Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-icon carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only sr-only-previous">Previous</span><span class="header-slider_slesh">/</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="sr-only sr-only-next">Next</span>
+						<span class="carousel-control-icon carousel-control-next-icon" aria-hidden="true"></span>
+					</a>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-					<span class="sr-only">Next</span>
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				</a>
-        </div>
-    </div>
-    <div class="block">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h2>Take away the risk & you
-can do anything.</h2>
-					<p>Rapid solutions to the most complex business challenges with co</p>
-					<p>Take away the risk & you can do anything.</p>
-                    <a>Take a tour</a>
-                    <a>Take a tour</a>
-				</div>
-				<div class="col-12">
-					<div class="#">
-						<img alt="pikchur_risk" scr="img/img-content--girl-write">
+			</div>
+		</div>
+	</div>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<h2>Take away the risk & you can do anything.</h2>
+						<p>Rapid solutions to the most complex business challenges with cooperative procesеs-driven.</p>
+						<p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+							justo sapien, tempus 
+							sit amet rutrum eu, commodo eu lacus. 
+							Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.</p>
+						<a href="#">Take a tour</a>
+					</div>
+					<div class="col-6">
+						<div class="img-block">
+							<img alt="pikchur_risk" src="/img/img-content--girl-write.png">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-        
-    </div>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<img src="/img/img-content--chart.png" alt="img-chart">
+					</div>
+					<div class="col-6">
+						<h2>Constructingthe  best in class global assets.</h2>
+						<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+						<p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit 
+							ultricies Morbi in ligula nibh.</p>
+						<a href="#">Take a tour</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<p>Looking for a First-Class Business Plan Consultant?</p>
+					</div>
+					<div class="col-2">
+						<button class="btn" type="button" data-toggle="modal" data-target="#exampleModalCenter">Button</button>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1>Popular Services</h1>
+						<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+					</div>
+					<div class="col-4">
+						<img src="/img/img-content--girl-speaks.png" alt="#">
+						<h2>Turnaround Consulting</h2>
+						<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
+					</div>
+					<div class="col-4">
+						<img src="/img/img-content--man-notebock.png" alt="#">
+						<h2>Bonds & Commodities</h2>
+						<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
+					</div>
+					<div class="col-4">
+						<img src="/img/img-content--group-discuss.png" alt="#">
+						<h2>Audit & Assurance</h2>
+						<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<p>7890</p>
+						<p>coffee cups</p>
+					</div>
+					<div class="col-3">
+						<p>1 v</p>
+						<p>subscribers</p>
+					</div>
+					<div class="col-3">
+						<p>1509</p>
+						<p>custimers</p>
+					</div>
+					<div class="col-3">
+						<p>5972</p>
+						<p>purchases</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<div class="img-block">
+							<video src="#"></video>
+						</div>
+					</div>
+					<div class="col-6">
+						<h2>Why  we best Consulting office in london ?</h2>		
+						<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+						<p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+							justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.</p>
+						<a href="#">our services</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="blockquotes"></div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore autem pariatur numquam dolore impedit! Voluptas iste fugiat repellat maxime id modi necessitatibus, facere dolorem saepe fugit tempore, ullam culpa officia?</p>
+						<p>Sam Isbister</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1>Contact with us</h1>
+						<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+					</div>
+					<div class="col-4">
+						<h3>Head Quarter</h3>
+						<ul>
+							<li><span></span><p>14 Mao Road, N1 4EP, Los Angelos, USA</p></li>
+							<li><span></span><p>+79780666910</p></li>
+							<li><span></span><p>+79780666910</p></li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<h3>Head Quarter</h3>
+						<ul>
+							<li><span></span><p>14 Mao Road, N1 4EP, Los Angelos, USA</p></li>
+							<li><span></span><p>+79780666910</p></li>
+							<li><span></span><p>+79780666910</p></li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<h3>Head Quarter</h3>
+						<ul>
+							<li><span></span><p>14 Mao Road, N1 4EP, Los Angelos, USA</p></li>
+							<li><span></span><p>+79780666910</p></li>
+							<li><span></span><p>+79780666910</p></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+		<div class="footer-wraper">
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-2">
+							<p>Copyright @ <a href="index.html">Consule</a></p>
+						</div>
+						<div class="col-2">
+							<ul>
+								<li><a href="#" target="_blank"></a></li>
+								<li><a href="#" target="_blank"></a></li>
+								<li><a href="#" target="_blank"></a></li>
+								<li><a href="#" target="_blank"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="modal-window">
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+					<p><input class="form-control" type="text" placeholder="Yoyr name"></p>
+					<p><input class="form-control" type="email" placeholder="Yoyr email"></p>
+					<p><textarea class="form-control"></textarea></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+	  	</div>
+	</div>
 </body>
 </html>
