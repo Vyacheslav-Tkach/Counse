@@ -141,8 +141,10 @@ header {
   opacity: 1; }
 
 .carousel-control-next:focus,
+.carousel-control-prev:focus {
+  color: #fde428; }
+
 .carousel-control-next:hover,
-.carousel-control-prev:focus,
 .carousel-control-prev:hover {
   color: #ffffff;
   opacity: 1; }

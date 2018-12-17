@@ -175,10 +175,12 @@ header{
     color: $yellow;
     opacity: 1;
 }
-.carousel-control-next:focus,  
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+    color: $yellow;
+}
 .carousel-control-next:hover,
-.carousel-control-prev:focus,
-.carousel-control-prev:hover{
+.carousel-control-prev:hover {
     color: $white;
     opacity: 1; 
  }
