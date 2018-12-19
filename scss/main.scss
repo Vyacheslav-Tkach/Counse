@@ -44,7 +44,7 @@
     font-style: normal; 
 }
 // fonts END
-$dark-blue:#96c0eb;
+$dark-blue:#003366;
 $yellow:#fde428;
 $yellow-bg:#fde52c;
 $gray-dark:#333333;
@@ -140,6 +140,9 @@ header{
     color: $white;
     top: 50%;
 }
+.dropdown-menu{
+    background-color:transparent;
+}
 .carousel-control-next, .carousel-control-prev {
     width: auto;
     top: 6.1rem;
@@ -165,12 +168,13 @@ header{
     height: 1.5rem;
 }
 .carousel-control-prev {
-    left: 22.4rem;
+    left: 22.43rem;
     color: $yellow;
     opacity: 1;
 }
 .carousel-control-next {
-    left: 29.8rem;
+    left: 22.43rem;
+    margin-left: 7.375rem; 
     right: inherit;
     color: $yellow;
     opacity: 1;
@@ -220,9 +224,9 @@ header{
         font-family: "Montserrat";
         color: $yellow;
         font-weight: bold;
-        line-height: 2.429; 
+        line-height: 1.429; 
         text-transform: uppercase;
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid $yellow;
     }
     .carousel-caption a:hover{
         color:$white;
@@ -230,9 +234,126 @@ header{
         text-decoration: none;
     }
 }
-.dropdown-menu{
-    background-color:transparent;
+.header-text {
+    display: flex;
+    position: relative;
+    h1 {
+        position: absolute;
+        width: 300px;
+        top: -5.5rem;
+        left: 3.6rem;
+        text-align: right;
+        letter-spacing: -0.5px;
+        z-index: 6;
     }
-  
+    a {
+        position: absolute;
+        top: 6.2rem;
+        left: 13rem;
+        z-index: 6;
+    }
+    svg {
+        position: relative;
+        top: -10.5em;
+        width: 19em;
+        left: 17rem;
+        z-index: 3;
+    }
+}
+.block {
+    h2  {
+        font-family: "Montserrat", sans-serif;;
+        font-weight: bold;
+        color: $dark-blue;
+        font-size: 31px;
+        text-transform: uppercase;
+        line-height: 1.05;
+    }
+    h4  {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 21px;
+        color: $gray-light;
+    }
+    p   {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        color: $gray-dark;
+    }
+    a   {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        color: $dark-blue;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.429;
+        border-bottom: 2px solid $dark-blue;
+    }
+    a:hover{
+        border-bottom: 2px solid $yellow;
+        color: $yellow;
+        text-decoration: none;
+    }
+    .img-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .yellow_rectangle{
+            background-color: $yellow;
+            height: 520px;
+            width: 270px;
+            align-items: center;
+           
+        }
+        .pikchur_risk{
+            width: 499px;
+            height: 326px;
+            position: absolute;
+        }
+    }
+}
+.block-with-rectangle{
+    h2  {
+        padding-top: 92px;
+        width: 500px;
+    }
+    h4  {
+        padding-top: 10px;
+    }
+    p   {
+        padding-top: 10px;
+    }
+    a   {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        color: $dark-blue;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.429;
+        border-bottom: 2px solid $dark-blue;
+    }
+    a:hover{
+        border-bottom: 2px solid $yellow;
+        color: $yellow;
+        text-decoration: none;
+    }
+    .img-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .yellow_rectangle{
+            background-color: $yellow;
+            height: 520px;
+            width: 270px;
+            align-items: center;
+           
+        }
+        .pikchur_risk{
+            width: 499px;
+            height: 326px;
+            position: absolute;
+        }
+    }
+
+}
 
 
