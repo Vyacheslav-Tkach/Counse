@@ -296,16 +296,20 @@ header{
     }
 }
 .block-with-rectangle{
+    .wrap{
+        padding: 6rem 0;
+    }
     h2  {
-        padding-top: 92px;
         width: 30rem;
+        margin-bottom: 18px;
     }
     h4  {
-        padding-top: 10px;
         width: 30rem;
+        margin-bottom: 18px;
     }
     p   {
-        padding: 10px 0 16px 0;
+        padding: 0;
+        margin-bottom: 2rem;
         width: 34rem;
     }
     a   {
@@ -329,7 +333,6 @@ header{
             box-shadow: 0px 2px 5px $gray-dark;
         }
     }
-
 }
 .block-with-graphics {
     background-color: #f4f4f4;
@@ -350,8 +353,7 @@ header{
     }
     a   {
         padding: 0 0 0.2rem 0;
-    }
-    
+    }   
 }
 .block-intro-popup {
     display: flex;
@@ -381,9 +383,28 @@ header{
     }
 }
 .block-popular-services {
+    background-color: $white;
+    height: 700px;
+    display: flex;
     .block-popular-services__headline{
         h1 {
+            padding-top: 92px;
             text-align: center;
+            font-size: 31px;
+            color: $dark-blue;
+            font-family: "Montserrat";
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        p {
+            width: 545px;
+            font-size: 21px;
+            color: $gray-light;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 1.2;
+            padding-top: 5px;
         }
     }
 
