@@ -34,7 +34,9 @@
 
 body {
   position: relative;
-  color: #333333; }
+  color: #333333;
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
@@ -50,6 +52,9 @@ h1, h2, h3, h4, h5, h6 {
 .header-slider {
   display: block;
   top: 0; }
+
+.carousel-inner img {
+  min-height: 100vh; }
 
 header {
   position: absolute;
@@ -203,21 +208,21 @@ header {
   .header-text h1 {
     position: absolute;
     width: 300px;
-    top: -5.5rem;
+    top: -7.8rem;
     left: 3.6rem;
     text-align: right;
     letter-spacing: -0.5px;
     z-index: 6; }
   .header-text a {
     position: absolute;
-    top: 6.2rem;
+    top: 4rem;
     left: 13rem;
     z-index: 6; }
   .header-text svg {
     position: relative;
     width: 19rem;
     height: 23.62rem;
-    top: -10.5em;
+    top: -12.7em;
     left: 17rem;
     z-index: 3; }
 
@@ -250,7 +255,7 @@ header {
   text-decoration: none; }
 
 .block-with-rectangle .wrap {
-  padding: 6rem 0; }
+  padding: 5.85rem 0 3.9rem; }
 .block-with-rectangle h2 {
   width: 30rem;
   margin-bottom: 18px; }
@@ -289,7 +294,7 @@ header {
 
 .block-with-graphics {
   background-color: #f4f4f4;
-  height: 700px;
+  height: 688px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,12 +347,12 @@ header {
 
 .block-popular-services {
   background-color: #ffffff;
-  height: 700px;
+  height: 673px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .block-popular-services .block-popular-services__headline h1 {
-    padding-top: 92px;
+    margin-bottom: 13px;
     text-align: center;
     font-size: 31px;
     color: #003366;
@@ -360,8 +365,43 @@ header {
     font-size: 21px;
     color: #666666;
     text-align: center;
-    margin: 0 auto;
-    line-height: 1.2;
-    padding-top: 5px; }
+    margin: 0 auto 43px;
+    line-height: 1.2; }
+  .block-popular-services .block-popular-services__row {
+    padding: 92px 0; }
+  .block-popular-services .block-popular-services__item img {
+    margin-bottom: 33px; }
+  .block-popular-services .block-popular-services__item h2 {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    margin-bottom: 23px; }
+
+.block-show-of {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 360px;
+  background-image: url(/img/background-center.png);
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .block-show-of p {
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-align: center; }
+  .block-show-of p:first-child {
+    font-size: 48px;
+    line-height: 1.25;
+    letter-spacing: 10px; }
+  .block-show-of p:last-child {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 3px; }
+
+.block-reviews {
+  background-image: url(/img/background-center-second.png);
+  min-height: 550px; }
 
 /*# sourceMappingURL=main.css.map */

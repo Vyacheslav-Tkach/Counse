@@ -61,6 +61,8 @@ $second-font-text: 'MyriadPro', sans-serif;
 body{
     position: relative;
     color: $gray-dark;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 h1, h2, h3, h4 , h5, h6 {
     font-family: $primari-font;
@@ -76,6 +78,9 @@ h1, h2, h3, h4 , h5, h6 {
 .header-slider {
     display: block;
     top: 0;
+}
+.carousel-inner img {
+    min-height: 100vh;
 }
 header{
     position: absolute;
@@ -240,7 +245,7 @@ header{
     h1 {
         position: absolute;
         width: 300px;
-        top: -5.5rem;
+        top: -7.8rem;
         left: 3.6rem;
         text-align: right;
         letter-spacing: -0.5px;
@@ -248,7 +253,7 @@ header{
     }
     a {
         position: absolute;
-        top: 6.2rem;
+        top: 4rem;
         left: 13rem;
         z-index: 6;
     }
@@ -256,7 +261,7 @@ header{
         position: relative;
         width: 19rem;
         height: 23.62rem;
-        top: -10.5em;
+        top: -12.7em;
         left: 17rem;
         z-index: 3;
     }
@@ -297,7 +302,7 @@ header{
 }
 .block-with-rectangle{
     .wrap{
-        padding: 6rem 0;
+        padding: 5.85rem 0 3.9rem;
     }
     h2  {
         width: 30rem;
@@ -336,7 +341,7 @@ header{
 }
 .block-with-graphics {
     background-color: #f4f4f4;
-    height: 700px;
+    height: 688px;
     display: flex;
     align-items: center;
     h2  {
@@ -384,11 +389,11 @@ header{
 }
 .block-popular-services {
     background-color: $white;
-    height: 700px;
+    height: 673px;
     display: flex;
-    .block-popular-services__headline{
+    .block-popular-services__headline {
         h1 {
-            padding-top: 92px;
+            margin-bottom: 13px;
             text-align: center;
             font-size: 31px;
             color: $dark-blue;
@@ -399,13 +404,52 @@ header{
         }
         p {
             width: 545px;
+           
             font-size: 21px;
             color: $gray-light;
             text-align: center;
-            margin: 0 auto;
+            margin: 0 auto 43px;
             line-height: 1.2;
-            padding-top: 5px;
         }
     }
-
+    .block-popular-services__row {
+        padding: 92px 0;
+    }
+    .block-popular-services__item {
+        img {
+            margin-bottom: 33px;
+        }
+        h2 {
+            font-size: 20px;
+            letter-spacing: 0.3px;
+            margin-bottom: 23px;
+        }
+    }
+}
+.block-show-of{
+    display: flex;
+    min-height: 360px;
+    background-image: url(/img/background-center.png);
+    background-size: cover;
+    align-items: center;
+    p {
+        color: $white;
+        font-family: "Montserrat";
+        text-align: center;
+    }
+    p:first-child {
+        font-size: 48px;
+        line-height: 1.25;
+        letter-spacing: 10px;
+    }
+    p:last-child {
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 1.25;
+        letter-spacing: 3px;
+    }
+}
+.block-reviews{
+    background-image: url(/img/background-center-second.png);
+    min-height: 550px;
 }

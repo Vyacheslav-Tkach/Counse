@@ -23,13 +23,14 @@
 	<script src="js/jquery-3.3.1.min.js" defer></script>
 	<script src="js/popper.min.js" defer></script>
 	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/common.js" defer></script>
 </head>
 <body>
 	<div class="site"> 
 		<div class="header-wraper">
 			<header>
 				<div class="container">
-					<div class="row justify-content-between">
+					<div class="row justify-content-between row-header">
 						<div class="col-3">
 							<div class="logo">
 								<img src="img/logo.svg"alt="">
@@ -37,93 +38,95 @@
 								<p>own your course</p> -->
 							</div>
 						</div>
-					<div class="col-8 offset-md-1">
-						<div class="novigation">
-							<ul class="navigation_list navigation_list--header">
-								<li class="navigation__item"><a href="">About</a></li>
-								<li class="navigation__item"><a href="">Services</a></li>
-								<li class="navigation__item"><a href="">Why we best</a></li>
-								<li class="navigation__item"><a href="">Testimonials</a></li>
-								<li class="navigation__item"><a href="">Contact</a></li>
-								<li class="navigation__item">
-									<div class="dropdown">
-										<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<img src="img/icon--flag-united-kingdom.svg" alt="img_languages">
-										</button>
-										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-											<a class="dropdown-item" href="#">French</a>
-											<a class="dropdown-item" href="#">Russian</a>
-											<a class="dropdown-item" href="#">Ukrainian</a>
+						<div class="col-8 offset-md-1">
+							<div class="novigation">
+								<ul class="navigation_list navigation_list--header">
+									<li class="navigation__item"><a href="">About</a></li>
+									<li class="navigation__item"><a href="">Services</a></li>
+									<li class="navigation__item"><a href="">Why we best</a></li>
+									<li class="navigation__item"><a href="">Testimonials</a></li>
+									<li class="navigation__item"><a href="">Contact</a></li>
+									<li class="navigation__item">
+										<div class="dropdown">
+											<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<img src="img/icon--flag-united-kingdom.svg" alt="img_languages">
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">French</a>
+												<a class="dropdown-item" href="#">Russian</a>
+												<a class="dropdown-item" href="#">Ukrainian</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</header>
+			<div class="header-slider">
+				<div class="wrap">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/background-top.png" alt="first_slide">
+								<div class="carousel-caption">
+									<div class="col-6 offset-md-6">
+										<div class="header-text">
+											<h1>Consumer Products Consulting</h1>
+											<a href="#">Learn more</a>
+											<svg id="parentheses_header" data-name="parentheses_head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.3 465"><defs><style>.cls-1{fill:#fde428;}.cls-2,.cls-3{fill:none;stroke:#fde428;stroke-miterlimit:10;}.cls-2{stroke-width:12px;}.cls-3{stroke-width:11px;}</style></defs><title>Rectangle</title><path class="cls-1" d="M8,484.5H366a1.5,1.5,0,0,0,0-3H8a1.5,1.5,0,0,0,0,3Z" transform="translate(-2.5 -21.5)"/><polyline class="cls-2" points="9 378 9 459 365 459 365 6 6 6 6 93.833"/><line class="cls-3" x1="9" y1="292.5" x2="9" y2="325.5"/></svg>
 										</div>
 									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div> 
-			</div>
-		</header>
-		<div class="header-slider">
-			<div class="wrap">
-				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="img/background-top.png" alt="first_slide">
-							<div class="carousel-caption">
-								<div class="col-6 offset-md-6">
-									<div class="header-text">
-										<h1>Consumer Products Consulting</h1>
-										<a href="#">Learn more</a>
-										<svg id="parentheses_header" data-name="parentheses_head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.3 465"><defs><style>.cls-1{fill:#fde428;}.cls-2,.cls-3{fill:none;stroke:#fde428;stroke-miterlimit:10;}.cls-2{stroke-width:12px;}.cls-3{stroke-width:11px;}</style></defs><title>Rectangle</title><path class="cls-1" d="M8,484.5H366a1.5,1.5,0,0,0,0-3H8a1.5,1.5,0,0,0,0,3Z" transform="translate(-2.5 -21.5)"/><polyline class="cls-2" points="9 378 9 459 365 459 365 6 6 6 6 93.833"/><line class="cls-3" x1="9" y1="292.5" x2="9" y2="325.5"/></svg>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/background-top.png" alt="second_slide">
+								<div class="carousel-caption">
+									<div class="col-6 offset-md-6">
+										<div class="header-text">
+											<h1>Consumer Products Consulting</h1>
+											<a href="#">Learn more</a>
+											<svg id="parentheses_header" data-name="parentheses_head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.3 465"><defs><style>.cls-1{fill:#fde428;}.cls-2,.cls-3{fill:none;stroke:#fde428;stroke-miterlimit:10;}.cls-2{stroke-width:12px;}.cls-3{stroke-width:11px;}</style></defs><title>Rectangle</title><path class="cls-1" d="M8,484.5H366a1.5,1.5,0,0,0,0-3H8a1.5,1.5,0,0,0,0,3Z" transform="translate(-2.5 -21.5)"/><polyline class="cls-2" points="9 378 9 459 365 459 365 6 6 6 6 93.833"/><line class="cls-3" x1="9" y1="292.5" x2="9" y2="325.5"/></svg>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="carousel-item">
-							<img src="img/background-top.png" alt="second_slide">
-							<div class="carousel-caption">
-								<div class="col-6 offset-md-6">
-									<div class="header-text">
-										<h1>Consumer Products Consulting</h1>
-										<a href="#">Learn more</a>
-										<svg id="parentheses_header" data-name="parentheses_head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.3 465"><defs><style>.cls-1{fill:#fde428;}.cls-2,.cls-3{fill:none;stroke:#fde428;stroke-miterlimit:10;}.cls-2{stroke-width:12px;}.cls-3{stroke-width:11px;}</style></defs><title>Rectangle</title><path class="cls-1" d="M8,484.5H366a1.5,1.5,0,0,0,0-3H8a1.5,1.5,0,0,0,0,3Z" transform="translate(-2.5 -21.5)"/><polyline class="cls-2" points="9 378 9 459 365 459 365 6 6 6 6 93.833"/><line class="cls-3" x1="9" y1="292.5" x2="9" y2="325.5"/></svg>
+							<div class="carousel-item">
+								<img src="img/background-top.png" alt="third_slide">
+								<div class="carousel-caption">
+									<div class="col-6 offset-md-6">
+										<div class="header-text">
+											<h1>Consumer Products Consulting</h1>
+											<a href="#">Learn more</a>
+											<svg id="parentheses_header" data-name="parentheses_head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.3 465"><defs><style>.cls-1{fill:#fde428;}.cls-2,.cls-3{fill:none;stroke:#fde428;stroke-miterlimit:10;}.cls-2{stroke-width:12px;}.cls-3{stroke-width:11px;}</style></defs><title>Rectangle</title><path class="cls-1" d="M8,484.5H366a1.5,1.5,0,0,0,0-3H8a1.5,1.5,0,0,0,0,3Z" transform="translate(-2.5 -21.5)"/><polyline class="cls-2" points="9 378 9 459 365 459 365 6 6 6 6 93.833"/><line class="cls-3" x1="9" y1="292.5" x2="9" y2="325.5"/></svg>
+										</div>
 									</div>
-								</div>
+								</div>  
 							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="img/background-top.png" alt="third_slide">
-							<div class="carousel-caption">
-								<div class="col-6 offset-md-6">
-									<div class="header-text">
-										<h1>Consumer Products Consulting</h1>
-										<a href="#">Learn more</a>
-										<svg id="parentheses_header" data-name="parentheses_head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.3 465"><defs><style>.cls-1{fill:#fde428;}.cls-2,.cls-3{fill:none;stroke:#fde428;stroke-miterlimit:10;}.cls-2{stroke-width:12px;}.cls-3{stroke-width:11px;}</style></defs><title>Rectangle</title><path class="cls-1" d="M8,484.5H366a1.5,1.5,0,0,0,0-3H8a1.5,1.5,0,0,0,0,3Z" transform="translate(-2.5 -21.5)"/><polyline class="cls-2" points="9 378 9 459 365 459 365 6 6 6 6 93.833"/><line class="cls-3" x1="9" y1="292.5" x2="9" y2="325.5"/></svg>
-									</div>
-								</div>
-							</div>  
+						<div  class="carousel-control">
+							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+								<span class="carousel-control-icon carousel-control-prev-icon" aria-hidden="true">
+									<?xml version="1.0" encoding="iso-8859-1"?>	<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" x="0px" y="0px"  viewBox="0 0 493.353 493.352" xml:space="preserve">
+									<g><path d="M490.786,212.678c-1.718-1.713-3.901-2.568-6.57-2.568H127.907v-63.953c0-3.809-1.812-6.567-5.424-8.28   c-3.621-1.521-6.952-0.949-9.995,1.713L2.853,240.658C0.95,242.564,0,244.848,0,247.511c0,2.474,0.95,4.665,2.853,6.567   l109.636,99.928c3.046,2.474,6.377,2.956,9.995,1.427c3.612-1.52,5.424-4.278,5.424-8.278v-63.953h356.315   c2.663,0,4.854-0.859,6.564-2.567c1.711-1.711,2.566-3.897,2.566-6.563v-54.821C493.356,216.586,492.497,214.393,490.786,212.678z" fill="#fde428"/></g>
+									</svg>		
+								</span>
+								<span class="sr-only sr-only-previous">Previous</span><span class="header-slider_slesh">/</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+								<span class="sr-only sr-only-next">Next</span>
+								<span class="carousel-control-icon carousel-control-next-icon" aria-hidden="true">
+									<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" x="0px" y="0px" viewBox="0 0 493.356 493.356" xml:space="preserve">
+									<g><path d="M490.498,239.278l-109.632-99.929c-3.046-2.474-6.376-2.95-9.993-1.427c-3.613,1.525-5.427,4.283-5.427,8.282v63.954H9.136   c-2.666,0-4.856,0.855-6.567,2.568C0.859,214.438,0,216.628,0,219.292v54.816c0,2.663,0.855,4.853,2.568,6.563   c1.715,1.712,3.905,2.567,6.567,2.567h356.313v63.953c0,3.812,1.817,6.57,5.428,8.278c3.62,1.529,6.95,0.951,9.996-1.708   l109.632-101.077c1.903-1.902,2.852-4.182,2.852-6.849C493.356,243.367,492.401,241.181,490.498,239.278z" fill="#fde428"/></g>
+									</svg>
+								</span>
+							</a>
 						</div>
 					</div>
-					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-						<span class="carousel-control-icon carousel-control-prev-icon" aria-hidden="true">
-							<?xml version="1.0" encoding="iso-8859-1"?>	<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" x="0px" y="0px"  viewBox="0 0 493.353 493.352" xml:space="preserve">
-							<g><path d="M490.786,212.678c-1.718-1.713-3.901-2.568-6.57-2.568H127.907v-63.953c0-3.809-1.812-6.567-5.424-8.28   c-3.621-1.521-6.952-0.949-9.995,1.713L2.853,240.658C0.95,242.564,0,244.848,0,247.511c0,2.474,0.95,4.665,2.853,6.567   l109.636,99.928c3.046,2.474,6.377,2.956,9.995,1.427c3.612-1.52,5.424-4.278,5.424-8.278v-63.953h356.315   c2.663,0,4.854-0.859,6.564-2.567c1.711-1.711,2.566-3.897,2.566-6.563v-54.821C493.356,216.586,492.497,214.393,490.786,212.678z" fill="#fde428"/></g>
-							</svg>		
-						</span>
-						<span class="sr-only sr-only-previous">Previous</span><span class="header-slider_slesh">/</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-						<span class="sr-only sr-only-next">Next</span>
-						<span class="carousel-control-icon carousel-control-next-icon" aria-hidden="true">
-							<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" x="0px" y="0px" viewBox="0 0 493.356 493.356" xml:space="preserve">
-							<g><path d="M490.498,239.278l-109.632-99.929c-3.046-2.474-6.376-2.95-9.993-1.427c-3.613,1.525-5.427,4.283-5.427,8.282v63.954H9.136   c-2.666,0-4.856,0.855-6.567,2.568C0.859,214.438,0,216.628,0,219.292v54.816c0,2.663,0.855,4.853,2.568,6.563   c1.715,1.712,3.905,2.567,6.567,2.567h356.313v63.953c0,3.812,1.817,6.57,5.428,8.278c3.62,1.529,6.95,0.951,9.996-1.708   l109.632-101.077c1.903-1.902,2.852-4.182,2.852-6.849C493.356,243.367,492.401,241.181,490.498,239.278z" fill="#fde428"/></g>
-							</svg>
-						</span>
-					</a>
 				</div>
 			</div>
-		</div>
-	</div>
+		</div>	
 	<main role="main">
 		<div class="block block-with-rectangle">
 			<div class="container">
@@ -173,28 +176,28 @@
 					</div>
 					<div class="col-6 block-intro-popup-btn">
 						<button class="btn" type="button" data-toggle="modal" data-target="#exampleModalCenter">Contact Now</button>	
-					</div>
+					</div> 
 				</div>
 			</div>
 		</div>
 		<div class="block block-popular-services">
 			<div class="container">
-				<div class="row">
+				<div class="row block-popular-services__row">
 					<div class="col-12 block-popular-services__headline">
 						<h1>Popular Services</h1>
 						<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
 					</div>
-					<div class="col-4">
+					<div class="col-4 block-popular-services__item">
 						<img src="img/img-content--girl-speaks.png" alt="#">
 						<h2>Turnaround Consulting</h2>
 						<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
 					</div>
-					<div class="col-4">
+					<div class="col-4 block-popular-services__item">
 						<img src="img/img-content--man-notebock.png" alt="#">
 						<h2>Bonds & Commodities</h2>
 						<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
 					</div>
-					<div class="col-4">
+					<div class="col-4 block-popular-services__item">
 						<img src="img/img-content--group-discuss.png" alt="#">
 						<h2>Audit & Assurance</h2>
 						<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
@@ -202,7 +205,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="block">
+		<div class="block block-show-of">
 			<div class="container">
 				<div class="row">
 					<div class="col-3">
@@ -210,12 +213,12 @@
 						<p>coffee cups</p>
 					</div>
 					<div class="col-3">
-						<p>1 v</p>
+						<p>1M</p>
 						<p>subscribers</p>
 					</div>
 					<div class="col-3">
 						<p>1509</p>
-						<p>custimers</p>
+						<p>customers</p>
 					</div>
 					<div class="col-3">
 						<p>5972</p>
@@ -224,29 +227,33 @@
 				</div>
 			</div>
 		</div>
-		<div class="block">
+		<div class="block block-with-rectangle">
 			<div class="container">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-5">
 						<div class="img-block">
-							<video src="#"></video>
+							<div class="yellow_rectangle"></div>
+							<img class="pikchur_risk" alt="pikchur_risk" src="img/img-content--girl-write.png">
 						</div>
 					</div>
-					<div class="col-6">
-						<h2>Why  we best Consulting office in london ?</h2>		
-						<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-						<p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
-							justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.</p>
-						<a href="#">our services</a>
+					<div class="col-6 offset-md-1">
+						<div class="wrap">	
+							<h2>Why  we best Consulting office in london ?</h2>		
+							<p>Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+							<p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+								justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.</p>
+							<a href="#">our services</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="block">
+		<div class="block block-reviews">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="blockquotes"></div>
+						
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore autem pariatur numquam dolore impedit! Voluptas iste fugiat repellat maxime id modi necessitatibus, facere dolorem saepe fugit tempore, ullam culpa officia?</p>
 						<p>Sam Isbister</p>
 					</div>
@@ -284,6 +291,7 @@
 							<li><span></span><p>+79780666910</p></li>
 						</ul>
 					</div>
+				</div>
 			</div>
 		</div>
 	</main>
