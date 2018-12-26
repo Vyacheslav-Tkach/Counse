@@ -21,6 +21,13 @@ ymaps.ready(function () {
             zoom: 13,
             controls: []
         },
+        {
+            if (mapMoscow) {
+                ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+                var placemark = new Placemark([55.37, 35.45]);
+                });
+            }
+        },
         {suppressMapOpenBlock: true},
         {
             searchControlProvider: 'yandex#search'
@@ -67,6 +74,7 @@ ymaps.ready(function () {
             // Макет содержимого.
             iconContentLayout: MyIconContentLayout
         });
+        
 
     myMap.geoObjects
         .add(myPlacemark)
