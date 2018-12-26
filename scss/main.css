@@ -402,6 +402,74 @@ header {
 
 .block-reviews {
   background-image: url(/img/background-center-second.png);
-  min-height: 550px; }
+  min-height: 540px; }
+  .block-reviews .block-reviews__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 120px 0; }
+    .block-reviews .block-reviews__content img {
+      width: 1.6rem;
+      margin-bottom: 33px;
+      -ms-flex-item-align: center;
+          align-self: center; }
+    .block-reviews .block-reviews__content p {
+      color: #ffffff;
+      width: 57rem;
+      margin-bottom: 60px;
+      font-size: 18px;
+      letter-spacing: 0.4px;
+      line-height: 2.08;
+      -ms-flex-item-align: center;
+          align-self: center; }
+    .block-reviews .block-reviews__content p:last-child {
+      -ms-flex-item-align: center;
+          align-self: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold; }
+    .block-reviews .block-reviews__content p.first::before {
+      content: '-----';
+      letter-spacing: -2px;
+      margin-right: 10px;
+      line-height: 1; }
+    .block-reviews .block-reviews__content p.first:after {
+      content: '-----';
+      letter-spacing: -2px;
+      margin-left: 10px;
+      line-height: 1;
+      vertical-align: center; }
+
+.block-contact-with {
+  background-color: #ffffff;
+  height: 673px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .block-contact-with .block-contact-with__headline h1 {
+    margin-bottom: 13px;
+    text-align: center;
+    font-size: 31px;
+    color: #003366;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.5px; }
+  .block-contact-with .block-contact-with__headline p {
+    width: 545px;
+    font-size: 21px;
+    color: #666666;
+    text-align: center;
+    margin: 0 auto 43px;
+    line-height: 1.2; }
+  .block-contact-with .block-contact-with__row {
+    padding: 92px 0; }
+  .block-contact-with .block-contact-with__item {
+    padding: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -404,7 +404,6 @@ header{
         }
         p {
             width: 545px;
-           
             font-size: 21px;
             color: $gray-light;
             text-align: center;
@@ -451,5 +450,75 @@ header{
 }
 .block-reviews{
     background-image: url(/img/background-center-second.png);
-    min-height: 550px;
+    min-height: 540px;
+    .block-reviews__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 0;
+        img {
+            width: 1.6rem;
+            margin-bottom: 33px;
+            align-self: center;
+        }
+        p {
+            color: $white;
+            width: 57rem;
+            margin-bottom: 60px;
+            font-size: 18px;
+            letter-spacing: 0.4px;
+            line-height: 2.08;
+            align-self: center;
+        }
+        p:last-child{
+            align-self: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        p.first::before{
+            content: '-----';
+            letter-spacing: -2px;      
+            margin-right: 10px;
+            line-height: 1;
+        }
+        p.first:after{
+            content: '-----';
+            letter-spacing: -2px;      
+            margin-left: 10px;
+            line-height: 1;
+            vertical-align: center;
+        } 
+    }
+}
+.block-contact-with{
+    background-color: $white;
+    height: 673px;
+    display: flex;
+    .block-contact-with__headline {
+        h1 {
+            margin-bottom: 13px;
+            text-align: center;
+            font-size: 31px;
+            color: $dark-blue;
+            font-family: "Montserrat";
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        p {
+            width: 545px;
+            font-size: 21px;
+            color: $gray-light;
+            text-align: center;
+            margin: 0 auto 43px;
+            line-height: 1.2;
+        }
+    }
+    .block-contact-with__row {
+        padding: 92px 0;
+    }
+    .block-contact-with__item {
+        padding: 0;
+    }
 }
