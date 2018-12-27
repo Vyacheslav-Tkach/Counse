@@ -455,7 +455,7 @@ header{
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 120px 0;
+        padding: 120px 0 0 63px;
         img {
             width: 1.6rem;
             margin-bottom: 33px;
@@ -493,7 +493,7 @@ header{
 }
 .block-contact-with{
     background-color: $white;
-    height: 673px;
+    height: 800px;
     display: flex;
     .block-contact-with__headline {
         h1 {
@@ -516,11 +516,14 @@ header{
         }
     }
     .block-contact-with__row {
-        padding: 92px 0;
+        padding-top: 92px;
     }
     .block-contact-with__item {
+        margin-bottom: 50px;
         h3 {
             font-size: 1rem;
+            margin-bottom: 1.5rem;
+            padding-left: 2.7rem;
             font-family: "Montserrat";
             color: $dark-blue;
             font-weight: bold;
@@ -528,11 +531,29 @@ header{
             line-height: 0.864;
             text-align: left;
         } 
+        ul {
+            list-style: none;
+            padding: 0 37px;
+        }
+        span {
+            height: auto;
+        }
+        li {
+            display: flex;
+            flex: left;
+        }
+        li img {
+            width: 14px;
+            height: 14px;
+            margin-bottom: 5px;
+        }
         li p {
                 font-size: 16px;
                 font-family: "Segoe UI Emoji";
                 color: $dark-blue;
-                line-height: 1.313;        
+                line-height: 1.313;
+                padding-left: 25px;     
+                margin-bottom: 0.5rem;   
         }        
     }
 }
@@ -555,7 +576,7 @@ header{
 }
 .ymap-container-1, .ymap-container-2, .ymap-container-3 {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 2.7rem;
     overflow: hidden;
     cursor: pointer;
     background-position: center center;
@@ -622,3 +643,39 @@ header{
       opacity: 1;
     }
   }
+  .footer-wraper {
+    width: 100%;
+    height: 80px;
+    background-color: $dark-blue;
+    display: flex;
+    align-items: center;
+        align-self: center;
+    overflow: hidden;
+    .footer__item{
+        height: auto;
+        ul {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+            li a {
+                color: $white;
+                margin: 0;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        p {
+            color: $white;
+            margin: 0;
+            a {
+                color: $yellow;
+                text-decoration: none;
+            }
+        }
+    }
+}

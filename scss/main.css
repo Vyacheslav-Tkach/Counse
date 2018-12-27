@@ -412,7 +412,7 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding: 120px 0; }
+    padding: 120px 0 0 63px; }
     .block-reviews .block-reviews__content img {
       width: 1.6rem;
       margin-bottom: 33px;
@@ -447,7 +447,7 @@ header {
 
 .block-contact-with {
   background-color: #ffffff;
-  height: 673px;
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -468,20 +468,42 @@ header {
     margin: 0 auto 43px;
     line-height: 1.2; }
   .block-contact-with .block-contact-with__row {
-    padding: 92px 0; }
-  .block-contact-with .block-contact-with__item h3 {
-    font-size: 1rem;
-    font-family: "Montserrat";
-    color: #003366;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 0.864;
-    text-align: left; }
-  .block-contact-with .block-contact-with__item li p {
-    font-size: 16px;
-    font-family: "Segoe UI Emoji";
-    color: #003366;
-    line-height: 1.313; }
+    padding-top: 92px; }
+  .block-contact-with .block-contact-with__item {
+    margin-bottom: 50px; }
+    .block-contact-with .block-contact-with__item h3 {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      padding-left: 2.7rem;
+      font-family: "Montserrat";
+      color: #003366;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 0.864;
+      text-align: left; }
+    .block-contact-with .block-contact-with__item ul {
+      list-style: none;
+      padding: 0 37px; }
+    .block-contact-with .block-contact-with__item span {
+      height: auto; }
+    .block-contact-with .block-contact-with__item li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: left;
+          -ms-flex: left;
+              flex: left; }
+    .block-contact-with .block-contact-with__item li img {
+      width: 14px;
+      height: 14px;
+      margin-bottom: 5px; }
+    .block-contact-with .block-contact-with__item li p {
+      font-size: 16px;
+      font-family: "Segoe UI Emoji";
+      color: #003366;
+      line-height: 1.313;
+      padding-left: 25px;
+      margin-bottom: 0.5rem; }
 
 #map_little-falls, #map_Passaic, #map_Paterson {
   width: 100%;
@@ -502,7 +524,7 @@ header {
 
 .ymap-container-1, .ymap-container-2, .ymap-container-3 {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 2.7rem;
   overflow: hidden;
   cursor: pointer;
   background-position: center center;
@@ -582,5 +604,45 @@ header {
     opacity: .5; }
   to {
     opacity: 1; } }
+.footer-wraper {
+  width: 100%;
+  height: 80px;
+  background-color: #003366;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  overflow: hidden; }
+  .footer-wraper .footer__item {
+    height: auto; }
+    .footer-wraper .footer__item ul {
+      width: 100%;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      list-style: none; }
+      .footer-wraper .footer__item ul li a {
+        color: #ffffff;
+        margin: 0; }
+        .footer-wraper .footer__item ul li a img {
+          width: 20px;
+          height: 20px; }
+    .footer-wraper .footer__item p {
+      color: #ffffff;
+      margin: 0; }
+      .footer-wraper .footer__item p a {
+        color: #fde428;
+        text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
