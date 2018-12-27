@@ -381,7 +381,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   min-height: 360px;
-  background-image: url(/img/background-center.png);
+  background-image: url(img/background-center.png);
   background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -401,7 +401,7 @@ header {
     letter-spacing: 3px; }
 
 .block-reviews {
-  background-image: url(/img/background-center-second.png);
+  background-image: url(img/background-center-second.png);
   max-height: 540px; }
   .block-reviews .block-reviews__content {
     display: -webkit-box;
