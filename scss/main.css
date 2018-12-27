@@ -54,8 +54,9 @@ h1, h2, h3, h4, h5, h6 {
   top: 0; }
 
 .carousel-inner img {
-  min-height: 100vh;
-  background-color: #021c39; }
+  min-height: 100vh; }
+  .carousel-inner img .carousel-item .active {
+    background-color: #021c39; }
 
 header {
   position: absolute;
