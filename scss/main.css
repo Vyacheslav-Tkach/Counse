@@ -401,8 +401,8 @@ header {
     letter-spacing: 3px; }
 
 .block-reviews {
-  background-image: url(img/background-center-second.png);
-  max-height: 540px; }
+  background-image: url(/img/background-center-second.png);
+  min-height: 540px; }
   .block-reviews .block-reviews__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,4 +569,5 @@ header {
     opacity: .5; }
   to {
     opacity: 1; } }
+
 /*# sourceMappingURL=main.css.map */

@@ -449,8 +449,8 @@ header{
     }
 }
 .block-reviews{
-    background-image: url(img/background-center-second.png);
-    max-height: 540px;
+    background-image: url(/img/background-center-second.png);
+    min-height: 540px;
     .block-reviews__content {
         display: flex;
         flex-direction: column;
