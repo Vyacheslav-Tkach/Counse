@@ -428,7 +428,7 @@ header{
 .block-show-of{
     display: flex;
     min-height: 360px;
-    background-image: url(../img/background-center.png);
+    background-image: url(/img/background-center.png);
     background-size: cover;
     align-items: center;
     p {
@@ -449,7 +449,7 @@ header{
     }
 }
 .block-reviews{
-    background-image: url(../img/background-center-second.png);
+    background-image: url(img/background-center-second.png);
     max-height: 540px;
     .block-reviews__content {
         display: flex;
@@ -546,13 +546,13 @@ header{
     box-shadow: 0 0 0.5em  0 rgba(0,0,0,.2);
   }
   .ymap-container-1{
-    background: url('../img/map-1.png') #ffffff no-repeat;
+    background: url('/img/map-1.png') #ffffff no-repeat;
   }
   .ymap-container-2{
-    background: url('../img/map-2.png') #ffffff no-repeat;
+    background: url('/img/map-2.png') #ffffff no-repeat;
   } 
   .ymap-container-3{
-    background: url('../img/map-3.png') #ffffff no-repeat;
+    background: url('/img/map-3.png') #ffffff no-repeat;
   }
   .loader {
     position: absolute;
