@@ -498,13 +498,13 @@ header {
           box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2); }
 
 .ymap-container-1 {
-  background: url("/img/map-1.png") #ffffff no-repeat; }
+  background: url("img/map-1.png") #ffffff no-repeat; }
 
 .ymap-container-2 {
-  background: url("/img/map-2.png") #ffffff no-repeat; }
+  background: url("img/map-2.png") #ffffff no-repeat; }
 
 .ymap-container-3 {
-  background: url("/img/map-3.png") #ffffff no-repeat; }
+  background: url("img/map-3.png") #ffffff no-repeat; }
 
 .loader {
   position: absolute;
