@@ -23,7 +23,7 @@ var myMapTemp1, myPlacemarkTemp1;
 function init1 () {
   var myMapTemp1 = new ymaps.Map("map_little-falls", {
     center: [40.875339, -74.199921], 
-    zoom: 13,
+    zoom: 12,
     controls: ['fullscreenControl']
     },
     {
@@ -134,7 +134,7 @@ var myMapTemp2, myPlacemarkTemp2;
 function init2 () {
   var myMapTemp2 = new ymaps.Map("map_Passaic", {
     center: [40.868502, -74.125134], 
-    zoom: 10,
+    zoom: 11,
     controls: ['fullscreenControl']
     },
     {
