@@ -5,7 +5,7 @@ $(window).scroll(function() {
         "transform" : "translate(0%, " + st /-6 + "%"
     });
     var st = $(this).scrollTop();
-    $(".carousel-control-prev , .carousel-control-next").css({
+    $(".carousel-control-prev_scroll , .carousel-control-next-scroll").css({
         "transform" : "translate(0%, " + st /-14 + "%"
     });
     var st = $(this).scrollTop();
@@ -350,3 +350,7 @@ var ymap3 = function() {
   $(function() {
     ymap3();
   });
+
+  $(function() {
+
+  })
