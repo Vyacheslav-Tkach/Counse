@@ -79,12 +79,12 @@ h1, h2, h3, h4 , h5, h6 {
     display: block;
     top: 0;
 }
-.carousel-inner img {
+.carousel-inner {
     min-height: 100vh;
-    .carousel-item .active {
-        background-color: #021c39;
+    background-color: #021c39;
+    img {
+        min-height: 100vh;
     }
-    
 }
 header{
     position: absolute;
