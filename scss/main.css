@@ -59,6 +59,9 @@ h1, h2, h3, h4, h5, h6 {
   .carousel-inner img {
     min-height: 100vh; }
 
+.carousel-item {
+  min-height: 100vh; }
+
 header {
   position: absolute;
   display: -webkit-box;
@@ -251,10 +254,13 @@ header {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.429;
-  border-bottom: 2px solid #003366; }
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
 .block a:hover {
-  border-bottom: 2px solid #fde428;
-  color: #fde428;
+  border-bottom: 2px solid #003366;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   text-decoration: none; }
 
 .block-with-rectangle .wrap {
@@ -305,13 +311,15 @@ header {
       -ms-flex-align: center;
           align-items: center; }
   .block-with-graphics h2 {
-    width: 30rem; }
+    width: 30rem;
+    margin-bottom: 18px; }
   .block-with-graphics h4 {
-    padding-top: 10px;
-    width: 30rem; }
+    width: 30rem;
+    margin-bottom: 18px; }
   .block-with-graphics p {
-    padding: 10px 0 16px 0;
     width: 35rem;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
     line-height: 1.563; }
   .block-with-graphics a {
     padding: 0 0 0.2rem 0; }
