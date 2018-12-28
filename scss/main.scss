@@ -238,11 +238,11 @@ header{
         font-weight: bold;
         line-height: 1.429; 
         text-transform: uppercase;
-        border-bottom: 2px solid $yellow;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        transition: .3s;
     }
     .carousel-caption a:hover{
-        color:$white;
-        border-bottom: 2px solid $white;
+        border-bottom: 2px solid $yellow;
         text-decoration: none;
     }
 }
@@ -300,11 +300,10 @@ header{
         font-size: 16px;
         line-height: 1.429;
         border-bottom: 2px solid rgba(0, 0, 0, 0);
-        transition: 0.5s;
+        transition: .3s;
     }
     a:hover{
         border-bottom: 2px solid $dark-blue;
-        transition: 0.5s;
         text-decoration: none;
     }
 }

@@ -200,10 +200,11 @@ header {
   font-weight: bold;
   line-height: 1.429;
   text-transform: uppercase;
-  border-bottom: 2px solid #fde428; }
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: .3s;
+  transition: .3s; }
 .header-slider .carousel-caption a:hover {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fde428;
   text-decoration: none; }
 
 .header-text {
@@ -255,12 +256,10 @@ header {
   font-size: 16px;
   line-height: 1.429;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  -webkit-transition: .3s;
+  transition: .3s; }
 .block a:hover {
   border-bottom: 2px solid #003366;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   text-decoration: none; }
 
 .block-with-rectangle .wrap {
