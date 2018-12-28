@@ -5,7 +5,7 @@ var str = $(this).serialize();
 
 $.ajax({
 type: "POST",
-url: "../contact.php",
+url: "../php/contact.php",
 data: str,
 success: function(msg) {
 if(msg == 'OK') {
