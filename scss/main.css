@@ -662,4 +662,7 @@ header {
         color: #fde428;
         text-decoration: none; }
 
+#loader {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */

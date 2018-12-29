@@ -364,6 +364,7 @@
 			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
+						<form id="contactForm" action="handler.php" method="post">
 						<div class="modal-header">
 							<h5 class="modal-title" id="exampleModalCenterTitle">Modal win</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -371,14 +372,20 @@
 							</button>
 						</div>
 						<div class="modal-body">
-						<p><input class="form-control" type="text" placeholder="Yoyr name"></p>
-						<p><input class="form-control" type="email" placeholder="Yoyr email"></p>
-						<p><textarea class="form-control"></textarea></p>
+						<p>	<input id="name" class="form-control field" name="name" required type="text" placeholder="Ваше имя"></p>
+						<p><input id="email" class="form-control field" name="email" required type="email" placeholder="Ваш E-mail:"></p>
+						<p><input id="phone" class="form-control field" name="phone" required type="text" placeholder="Ваш телефон:"></p>
+						<p><textarea id="message" class="form-control field" required name="message" rows="4"></textarea></p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
+							<button id="button" class="btn btn-primary button" type="submit">Отправить</button>
+							<div class="result">
+								<span id="answer"></span>
+								<span id="loader"><img src="img/loader.gif" alt=""></span>
+							</div>
 						</div>
+					</form>
 					</div>
 				</div>
 			</div>

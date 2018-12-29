@@ -14,6 +14,8 @@ $(window).scroll(function() {
     });
 });
 
+
+
 // #map_little-falls YANDEX MAP JS API
 var spinner1 = $('.ymap-container-1').children('.loader');
 var check_if_load1 = false;
