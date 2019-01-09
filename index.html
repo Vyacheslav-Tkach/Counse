@@ -24,6 +24,8 @@
 	<script src="js/popper.min.js" defer></script>
 	<script src="js/bootstrap.min.js" defer></script>
 	<script src="js/common.js" defer></script>
+	<script src="js/main.js" defer></script>
+	<script src="js/jquery.maskedinput.min.js" defer></script>
 </head>
 <body>
 	<div class="site"> 
@@ -372,12 +374,13 @@
 							</button>
 						</div>
 						<div class="modal-body">
-						<p>	<input id="name" class="form-control field" name="name" required type="text" placeholder="Ваше имя"></p>
+						<p><input id="name" class="form-control field" name="name" required type="text" placeholder="Ваше имя"></p>
 						<p><input id="email" class="form-control field" name="email" required type="email" placeholder="Ваш E-mail:"></p>
 						<p><input id="phone" class="form-control field" name="phone" required type="text" placeholder="Ваш телефон:"></p>
 						<p><textarea id="message" class="form-control field" required name="message" rows="4"></textarea></p>
 						</div>
 						<div class="modal-footer">
+							<input id="check" name="check" checked type="checkbox">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 							<button id="button" class="btn btn-primary button" type="submit">Отправить</button>
 							<div class="result">

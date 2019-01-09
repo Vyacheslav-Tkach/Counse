@@ -352,7 +352,3 @@ var ymap3 = function() {
   $(function() {
     ymap3();
   });
-
-  $(function() {
-
-  })

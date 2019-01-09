@@ -5,13 +5,13 @@ jQuery(document).ready(function($) {
 
     // Проверяет отмечен ли чекбокс согласия
     // с обработкой персональных данных
-//    $('#check').on('click', function() {
-//        if ($("#check").prop("checked")) {
-//            $('#button').attr('disabled', false);
-//        } else {
-//            $('#button').attr('disabled', true);
-//        }
-//    });
+    $('#check').on('click', function() {
+        if ($("#check").prop("checked")) {
+            $('#button').attr('disabled', false);
+        } else {
+            $('#button').attr('disabled', true);
+        }
+    });
 
     // Отправляет данные из формы на сервер и получает ответ
     $('#contactForm').on('submit', function(event) {

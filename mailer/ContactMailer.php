@@ -16,12 +16,12 @@ class ContactMailer
      * E-mail отправителя
      * @var string
      */
-    private static $emailFrom = 'slaviktka4@yandex.ru';
+    private static $emailFrom = 'counsel-info@mail.ru';
     /**
      * E-mail получателя
      * @var string
      */
-    private static $emailTo = 'slavik  ';
+    private static $emailTo = 'slavik1995s@mail.ru';
 
     /**
      * Отправляет писмо, если письмо отправлено,
@@ -42,13 +42,13 @@ class ContactMailer
         // Настройки подключения
         $mailer->isSMTP();
         // Устанавливает хост почтового сервера (Mail.ru: smtp.mail.ru, Google: smtp.gmail.com)
-        $mailer->Host = 'smtp.yandex.ru';
+        $mailer->Host = 'smtp.mail.ru';
         // Включает SMTP-авторизацию
         $mailer->SMTPAuth = true;
         // Логин или E-mail целиком
         $mailer->Username = self::$emailFrom;
         // Пароль от почтового ящика
-        $mailer->Password = 'slavikTkach';
+        $mailer->Password = 'slavikTka4';
         // Протокол соединения
         $mailer->SMTPSecure = 'ssl';
         // Порт для исходящаей почты
@@ -57,13 +57,13 @@ class ContactMailer
         // Устанавливает кодировку
         $mailer->CharSet = 'UTF-8';
         // Устанавливает E-mail и имя отправителя
-        $mailer->setFrom(self::$emailFrom, 'Имя отправителя');
+        $mailer->setFrom(self::$emailFrom, 'Counsel');
         // Добавляет E-mail получателя
         $mailer->addAddress(self::$emailTo);
         // Настройка HTML-формата
         $mailer->isHTML(false);
         // Тема письма
-        $mailer->Subject = 'Заполнена форма обратной связи';
+        $mailer->Subject = 'Заполнена форма обратной связи c сайта Counsel';
         // Основное тело письма
         $mailer->Body = $body;
         
