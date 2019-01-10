@@ -32,15 +32,18 @@ class ContactMailer
      * @param string $message
      * @return boolean
      */
+    
     public static function send($name, $email, $phone, $message)
     {
 		// Формируем тело письма
 		$body = "Имя: " . $name . "\nE-mail: " . $email . "\nТелефон: " . $phone . "\n\nСообщение:\n" . $message;
-
 		// Создаем объект PHPMailer
         $mailer = new PHPMailer();
         // Настройки подключения
         $mailer->isSMTP();
+        // Отключаем пдсказки
+        $mail->SMTPDebug = false;
+        $mail->do_debug = 0;
         // Устанавливает хост почтового сервера (Mail.ru: smtp.mail.ru, Google: smtp.gmail.com)
         $mailer->Host = 'smtp.mail.ru';
         // Включает SMTP-авторизацию
