@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             },
             error: function() {
                 loader.fadeOut(300, function() {
-                    answer.text('Произошла ошибка! Попробуйте позже.');
+                    answer.text('An error has occurred! Try later.');
                 });
                 button.attr('disabled', false);
             }

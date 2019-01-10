@@ -4,7 +4,7 @@ require_once __DIR__ . '/mailer/Validator.php';
 require_once __DIR__ . '/mailer/ContactMailer.php';
 
 if (!Validator::isAjax() || !Validator::isPost()) {
-	echo 'Доступ запрещен!';
+	echo 'Access is denied!';
 	exit;
 }
 
@@ -14,23 +14,23 @@ $phone = isset($_POST['phone']) ? trim(strip_tags($_POST['phone'])) : null;
 $message = isset($_POST['message']) ? trim(strip_tags($_POST['message'])) : null;
 
 if (empty($name) || empty($email) || empty($phone) || empty($message)) {
-	echo 'Все поля обязательны для заполнения.';
+	echo 'All fields are required.';
 	exit;
 }
 
 if (!Validator::isValidEmail($email)) {
-	echo 'E-mail не соответствует формату.';
+	echo 'Email does not match the format';
 	exit;
 }
 
 if (!Validator::isValidPhone($phone)) {
-	echo 'Телефон не соответствует формату.';
+	echo 'The phone does not match the format.';
 	exit;
 }
 
 if (ContactMailer::send($name, $email, $phone, $message)) {
-	echo htmlspecialchars($name) . ', ваше сообщение успешно отправлено.';
+	echo htmlspecialchars($name) . ', Your message has been successfully sent.';
 } else {
-	echo 'Произошла ошибка! Не удалось отправить сообщение.';
+	echo 'An error has occurred! Failed to send message.';
 }
 exit;
