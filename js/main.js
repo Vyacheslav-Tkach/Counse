@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
             data: form.serialize(),
             beforeSend: function() {
                 answer.empty();
-                button.attr('disabled', true).css('margin-bottom', '20px');
+                button.attr('disabled', true);
                 loader.fadeIn();
             },
             success: function(result) {
@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             },
             error: function() {
                 loader.fadeOut(300, function() {
-                    answer.text('Произошла ошибка! Попробуйте позже.');
+                    answer.text('Error, please try later.');
                 });
                 button.attr('disabled', false);
             }
