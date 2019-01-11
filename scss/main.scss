@@ -510,13 +510,13 @@ header{
 }
 .block-reviews__carousel-control{
     .carousel-control-prev{
-        justify-content: start;
+        justify-content: flex-start;
         width: 10%;
         transition: .3s;
         opacity: 0;
     }
     .carousel-control-next {
-        justify-content: end;
+        justify-content: flex-end;
         width: 10%;
         transition: .3s;
         opacity: 0;
@@ -712,4 +712,46 @@ header{
 }
 #loader {
 	display: none;
+}
+.modal-window {
+    font-family: 'MyriadPro';
+    .modal-title {
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        color: $dark-blue;
+        font-weight: bold;
+        letter-spacing: -0.3px;
+    }
+    .modal-footer {
+        .result {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            span {
+                margin: 0 auto;
+            }
+        }
+        .btn-primary, .btn-secondary {
+            background-color: $yellow;
+            color: $dark-blue;
+            border: 1px solid transparent;
+            font-weight: bold;
+            width: 7rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        .btn-primary:active, .btn-secondary:active {
+            background-color: $dark-blue;
+            border: none;
+            box-shadow: none;
+        }
+        .btn-primary:active:focus, .btn-secondary:active:focus {
+            box-shadow: none;
+            border: none;
+        }
+        .btn-primary:focus, .btn-secondary:focus {
+            box-shadow: none;
+            border: none;
+        }
+    }
 }

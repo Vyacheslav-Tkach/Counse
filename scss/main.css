@@ -449,7 +449,7 @@ header {
 .block-reviews__carousel-control .carousel-control-prev {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   width: 10%;
   -webkit-transition: .3s;
   transition: .3s;
@@ -457,7 +457,7 @@ header {
 .block-reviews__carousel-control .carousel-control-next {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   width: 10%;
   -webkit-transition: .3s;
   transition: .3s;
@@ -665,5 +665,43 @@ header {
 
 #loader {
   display: none; }
+
+.modal-window {
+  font-family: 'MyriadPro'; }
+  .modal-window .modal-title {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    color: #003366;
+    font-weight: bold;
+    letter-spacing: -0.3px; }
+  .modal-window .modal-footer .result {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .modal-window .modal-footer .result span {
+      margin: 0 auto; }
+  .modal-window .modal-footer .btn-primary, .modal-window .modal-footer .btn-secondary {
+    background-color: #fde428;
+    color: #003366;
+    border: 1px solid transparent;
+    font-weight: bold;
+    width: 7rem;
+    text-transform: uppercase;
+    font-size: 0.9rem; }
+  .modal-window .modal-footer .btn-primary:active, .modal-window .modal-footer .btn-secondary:active {
+    background-color: #003366;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .modal-window .modal-footer .btn-primary:active:focus, .modal-window .modal-footer .btn-secondary:active:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none; }
+  .modal-window .modal-footer .btn-primary:focus, .modal-window .modal-footer .btn-secondary:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none; }
 
 /*# sourceMappingURL=main.css.map */
