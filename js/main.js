@@ -29,8 +29,8 @@ jQuery(document).ready(function($) {
             data: form.serialize(),
             beforeSend: function() {
                 answer.empty();
-                button.attr('disabled', true).css('margin-bottom', '20px');
-                loader.fadeIn();
+                button.attr('disabled', true);
+                loader.fadeIn().css('display', 'flex');
             },
             success: function(result) {
                 loader.fadeOut(300, function() {

@@ -60,27 +60,27 @@ class SMTP
     /**
      * Debug level for no output.
      */
-    const DEBUG_OFF = 0;
+    const DEBUG_OFF = 1;
 
     /**
      * Debug level to show client -> server messages.
      */
-    const DEBUG_CLIENT = 1;
+    const DEBUG_CLIENT = 0;
 
     /**
      * Debug level to show client -> server and server -> client messages.
      */
-    const DEBUG_SERVER = 2;
+    const DEBUG_SERVER = 0;
 
     /**
      * Debug level to show connection status, client -> server and server -> client messages.
      */
-    const DEBUG_CONNECTION = 3;
+    const DEBUG_CONNECTION = 0;
 
     /**
      * Debug level to show all messages.
      */
-    const DEBUG_LOWLEVEL = 4;
+    const DEBUG_LOWLEVEL = 0;
 
     /**
      * Debug output level.
