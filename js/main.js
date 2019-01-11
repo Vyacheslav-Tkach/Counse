@@ -5,7 +5,6 @@ jQuery(document).ready(function($) {
 
     // Проверяет отмечен ли чекбокс согласия
     // с обработкой персональных данных
-    
     // $('#check').on('click', function() {
     //     if ($("#check").prop("checked")) {
     //         $('#button').attr('disabled', false);
@@ -36,14 +35,14 @@ jQuery(document).ready(function($) {
             success: function(result) {
                 loader.fadeOut(300, function() {
                     answer.text(result);
-                });
+                }).css('display', 'flex');
                 form.find('.field').val('');
                 button.attr('disabled', false);
             },
             error: function() {
                 loader.fadeOut(300, function() {
                     answer.text('Error, please try later.');
-                });
+                }).css('display', 'none');
                 button.attr('disabled', false);
             }
         });

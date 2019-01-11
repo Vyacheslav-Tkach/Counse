@@ -676,17 +676,17 @@ header {
     letter-spacing: -0.3px; }
   .modal-window .modal-footer .result {
     width: 100%;
-    margin: 0 auto; }
-    .modal-window .modal-footer .result span {
-      margin: 0 auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .modal-window .modal-footer .result #answer {
-      margin: 0 auto;
-      width: 210px; }
+      margin: 0 auto; }
     .modal-window .modal-footer .result #loader {
-      width: 40%; }
+      width: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .modal-window .modal-footer .result #loader img {
         margin: 0 auto; }
   .modal-window .modal-footer .btn-primary, .modal-window .modal-footer .btn-secondary {

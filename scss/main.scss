@@ -726,16 +726,13 @@ header{
         .result {
             width: 100%;
             margin: 0 auto;
-            span {
-                margin: 0 auto;
-                display: flex;
-            }
+            display: flex;
             #answer {
                 margin: 0 auto;
-                width: 210px;
             }
             #loader {
-                width: 40%;
+                width: 100%;
+                justify-content: center;
                 img {
                     margin: 0 auto;
                 }

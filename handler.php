@@ -29,7 +29,7 @@ if (!Validator::isValidPhone($phone)) {
 }
 
 if (ContactMailer::send($name, $email, $phone, $message)) {
-	echo htmlspecialchars($name) . ', Your message has been successfully sent.';
+	echo htmlspecialchars($name) . ', your message has been successfully sent.';
 } else {
 	echo 'An error has occurred! Failed to send message.';
 }
