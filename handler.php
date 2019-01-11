@@ -5,7 +5,7 @@ require_once __DIR__ . '/mailer/ContactMailer.php';
 
 if (!Validator::isAjax() || !Validator::isPost()) {
 	echo 'Access is denied!';
-	exit;
+	
 }
 
 $name = isset($_POST['name']) ? trim(strip_tags($_POST['name'])) : null;
@@ -15,17 +15,16 @@ $message = isset($_POST['message']) ? trim(strip_tags($_POST['message'])) : null
 
 if (empty($name) || empty($email) || empty($phone) || empty($message)) {
 	echo 'All fields are required.';
-	exit;
+	
 }
 
 if (!Validator::isValidEmail($email)) {
 	echo 'Email does not match the format';
-	exit;
-}
+	
 
 if (!Validator::isValidPhone($phone)) {
 	echo 'The phone does not match the format.';
-	exit;
+	
 }
 
 if (ContactMailer::send($name, $email, $phone, $message)) {
