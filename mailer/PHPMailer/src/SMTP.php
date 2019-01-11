@@ -34,7 +34,7 @@ class SMTP
      *
      * @var string
      */
-    const VERSION = '6.0.6';
+    const VERSION = '6.0.5';
 
     /**
      * SMTP line break constant.
@@ -60,27 +60,27 @@ class SMTP
     /**
      * Debug level for no output.
      */
-    const DEBUG_OFF = 1;
+    const DEBUG_OFF = 0;
 
     /**
      * Debug level to show client -> server messages.
      */
-    const DEBUG_CLIENT = 0;
+    const DEBUG_CLIENT = 1;
 
     /**
      * Debug level to show client -> server and server -> client messages.
      */
-    const DEBUG_SERVER = 0;
+    const DEBUG_SERVER = 2;
 
     /**
      * Debug level to show connection status, client -> server and server -> client messages.
      */
-    const DEBUG_CONNECTION = 0;
+    const DEBUG_CONNECTION = 3;
 
     /**
      * Debug level to show all messages.
      */
-    const DEBUG_LOWLEVEL = 0;
+    const DEBUG_LOWLEVEL = 4;
 
     /**
      * Debug output level.
@@ -155,13 +155,12 @@ class SMTP
      * @var string[]
      */
     protected $smtp_transaction_id_patterns = [
-        'exim' => '/[\d]{3} OK id=(.*)/',
-        'sendmail' => '/[\d]{3} 2.0.0 (.*) Message/',
-        'postfix' => '/[\d]{3} 2.0.0 Ok: queued as (.*)/',
-        'Microsoft_ESMTP' => '/[0-9]{3} 2.[\d].0 (.*)@(?:.*) Queued mail for delivery/',
-        'Amazon_SES' => '/[\d]{3} Ok (.*)/',
-        'SendGrid' => '/[\d]{3} Ok: queued as (.*)/',
-        'CampaignMonitor' => '/[\d]{3} 2.0.0 OK:([a-zA-Z\d]{48})/',
+        'exim' => '/[0-9]{3} OK id=(.*)/',
+        'sendmail' => '/[0-9]{3} 2.0.0 (.*) Message/',
+        'postfix' => '/[0-9]{3} 2.0.0 Ok: queued as (.*)/',
+        'Microsoft_ESMTP' => '/[0-9]{3} 2.[0-9].0 (.*)@(?:.*) Queued mail for delivery/',
+        'Amazon_SES' => '/[0-9]{3} Ok (.*)/',
+        'SendGrid' => '/[0-9]{3} Ok: queued as (.*)/',
     ];
 
     /**
@@ -733,7 +732,7 @@ class SMTP
     public function hello($host = '')
     {
         //Try extended hello first (RFC 2821)
-        return $this->sendHello('EHLO', $host) or $this->sendHello('HELO', $host);
+        return (bool) ($this->sendHello('EHLO', $host) or $this->sendHello('HELO', $host));
     }
 
     /**
