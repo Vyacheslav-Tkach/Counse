@@ -613,14 +613,36 @@ header{
     background-size: cover;
     box-shadow: 0 0 0.5em  0 rgba(0,0,0,.2);
   }
+  .ymap-container-1::before, .ymap-container-2::before, .ymap-container-3::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PGcgZmlsbD0iIzZCNkI2QiI+PHBhdGggZD0iTTE2LjE0IDcuODZMMTQuMjcgNkgyMHY1LjdsLTEuODMtMS44MkwxNS4wNCAxMyAxMyAxMC45OGwzLjEzLTMuMTN6bTAgME05Ljg2IDE4LjE0TDExLjczIDIwSDZ2LTUuN2wxLjgzIDEuODJMMTAuOTYgMTMgMTMgMTUuMDJsLTMuMTMgMy4xM3ptMCAwIi8+PC9nPjwvc3ZnPg==);
+    background-color: #fff;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    border: 1px solid white;
+    border-color: transparent;
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,.15),0 2px 5px -3px rgba(0,0,0,.15);
+    border-radius: 3px;
+  }
+
   .ymap-container-1{
-    background: url('../img/map-1.png') #ffffff no-repeat;
+    background: url('../img/map-1-991px.png') #ffffff no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
   .ymap-container-2{
-    background: url('../img/map-2.png') #ffffff no-repeat;
+    background: url('../img/map-2-991px.png') #ffffff no-repeat;
+    background-size: cover;
+    background-position: center center;
   } 
   .ymap-container-3{
-    background: url('../img/map-3.png') #ffffff no-repeat;
+    background: url('../img/map-3-991px.png') #ffffff no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
   .loader {
     position: absolute;
@@ -681,11 +703,15 @@ header{
     align-items: center;
         align-self: center;
     overflow: hidden;
+    .row {
+        flex-direction: row;
+    }
     .footer__item{
         height: auto;
         ul {
             width: 100%;
-            margin: 0;
+            max-width: 200px;
+            margin: 0 auto 0.5rem;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -702,6 +728,7 @@ header{
         p {
             color: $white;
             margin: 0;
+            text-align: center;
             a {
                 color: $yellow;
                 text-decoration: none;
@@ -764,13 +791,29 @@ header{
 
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+    .footer-wraper {
+        .row {
+            flex-direction: row-reverse;
+            .footer__item p {
+                text-align: left;
+            }
+            .footer__item ul {
+                margin: 0 0 0 auto;
+            }
+        }
+    } 
+ }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+   
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    
+ }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  }
