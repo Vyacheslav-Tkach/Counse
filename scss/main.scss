@@ -203,12 +203,12 @@ header{
         height: 1.5rem;
     }
     .carousel-control-prev {
-        left: 22.43rem;
+        left: 19.15%;
         color: $yellow;
         opacity: 1;
     }
     .carousel-control-next {
-        left: 22.43rem;
+        left: 19.15%;
         margin-left: 7.375rem; 
         right: inherit;
         color: $yellow;
@@ -267,7 +267,7 @@ header{
     }
     svg {
         position: relative;
-        width: 19rem;
+        min-width: 19rem;
         height: 23.62rem;
         top: -12.7em;
         left: 17rem;
@@ -569,10 +569,13 @@ header{
         span {
             height: auto;
         }
-        li img {
-            width: 14px;
-            height: 14px;
-            margin-bottom: 5px;
+        li  {
+            display: flex;
+            img {
+                width: 14px;
+                height: 14px;
+                margin-bottom: 5px;
+          }
         }
         li p {
                 font-size: 16px;
@@ -758,3 +761,19 @@ header{
         }
     }
 }
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// Extra large devices (large desktops, 1600px and up)
+@media (min-width: 1600px) {  }
