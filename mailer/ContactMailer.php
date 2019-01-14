@@ -14,7 +14,7 @@ class ContactMailer
 {
 	/**
      * E-mail отправителя
-     * @var string`
+     * @var string
      */
     private static $emailFrom = 'counsel-info@mail.ru';
     /**
