@@ -465,7 +465,7 @@ header {
 
 .block-contact-with {
   background-color: #ffffff;
-  height: 800px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
