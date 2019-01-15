@@ -711,7 +711,7 @@ header{
         ul {
             width: 100%;
             max-width: 200px;
-            margin: 0 auto 0.5rem;
+            margin :0  0  0 auto;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -727,8 +727,8 @@ header{
         }
         p {
             color: $white;
-            margin: 0;
-            text-align: center;
+            margin: 0 0 0 15px;
+            text-align: left;
             a {
                 color: $yellow;
                 text-decoration: none;
@@ -793,15 +793,37 @@ header{
  // Extra small devices (portrait phones, less than 576px)
  @media (max-width: 575.98px) { 
     .block-contact-with {
+        .block-contact-with__row {
+            padding-top: 46px;
+        }
         .block-contact-with__headline {
             h1 {
-                font-size: 0.968rem;
+                font-size: 20.3px;
+                margin-bottom: 6.5px;
+            }
+            p {
+                max-width: 362px;
+                font-size: 14px;
+                margin: 0 auto 21.5px;
+            }
+        }
+        .block-contact-with__item {
+            margin-bottom: 25px;
+            h3 {
+                font-size: 11px;
+                margin-bottom: 8px;
             }
         }
     }
     .footer-wraper {
-        .row {
-            flex-direction: row;
+        .footer__item{
+            ul {
+                margin: 0.3rem auto;
+            }
+            p {
+                margin: 0;
+                text-align: center;
+            }
         }
     } 
 
