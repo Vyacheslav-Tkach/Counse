@@ -834,23 +834,24 @@ header{
             }
          }
     }
-
     .block-reviews { 
-        .block-reviews__content { 
-            padding: 60px 0 30px 0;
-            p {
-                font-size: 12px;
+        .carousel-inner {
+            .block-reviews__content { 
+                padding: 40px 0 30px 0;
+                p {
+                    font-size: 12px;
+                    margin-bottom: 30px;
+                }
+                p.first {
+                    margin: 0;
+                }
+                img {
+                    width: 1rem;
+                    margin-bottom: 25px;
+                }
             }
-            img {
-                width: 1rem;
-            }
-            
         }
     }
-    
-   
-
-    
     .footer-wraper {
         .footer__item{
             ul {
