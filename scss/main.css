@@ -769,10 +769,12 @@ header {
       margin-bottom: 1.35rem; }
 
   .block-reviews .carousel-inner .block-reviews__content {
-    padding: 40px 0 30px 0; }
+    padding: 40px 0; }
     .block-reviews .carousel-inner .block-reviews__content p {
       font-size: 12px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      padding: 0px 20px;
+      line-height: 1.6; }
     .block-reviews .carousel-inner .block-reviews__content p.first {
       margin: 0;
       font-size: 11px; }
