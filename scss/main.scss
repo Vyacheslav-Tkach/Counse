@@ -809,8 +809,20 @@ header{
         .block-contact-with__item {
             margin-bottom: 25px;
             h3 {
-                font-size: 11px;
+                font-size: 12px;
                 margin-bottom: 8px;
+            }
+            ul {
+                padding: 0 
+            }
+            li {
+                p {
+                    font-size: 12px;
+                    margin-bottom: 0.25rem;
+                }
+                img {
+                    margin-bottom: 12px;
+                }
             }
         }
     }
