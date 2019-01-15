@@ -538,7 +538,7 @@ header{
             letter-spacing: -0.5px;
         }
         p {
-            width: 545px;
+            max-width: 545px;
             font-size: 21px;
             color: $gray-light;
             text-align: center;
@@ -704,7 +704,7 @@ header{
         align-self: center;
     overflow: hidden;
     .row {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
     .footer__item{
         height: auto;
@@ -789,34 +789,32 @@ header{
     }
 }
 
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    .footer-wraper {
-        .row {
-            flex-direction: row-reverse;
-            .footer__item p {
-                text-align: left;
-            }
-            .footer__item ul {
-                margin: 0 0 0 auto;
+ 
+ // Extra small devices (portrait phones, less than 576px)
+ @media (max-width: 575.98px) { 
+    .block-contact-with {
+        .block-contact-with__headline {
+            h1 {
+                font-size: 0.968rem;
             }
         }
+    }
+    .footer-wraper {
+        .row {
+            flex-direction: row;
+        }
     } 
- }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-   
 }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    
- }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
-
-// Extra large devices (large desktops, 1600px and up)
-@media (min-width: 1600px) {  }
+ 
+ // Small devices (landscape phones, less than 768px)
+ @media (max-width: 767.98px) {  }
+ 
+ // Medium devices (tablets, less than 992px)
+ @media (max-width: 991.98px) {  }
+ 
+ // Large devices (desktops, less than 1200px)
+ @media (max-width: 1199.98px) {  }
+ 
+ // Extra large devices (large desktops)
+ // No media query since the extra-large breakpoint has no upper bound on its width
