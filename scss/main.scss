@@ -359,7 +359,7 @@ header{
 }
 .block-with-graphics {
     background-color: #f4f4f4;
-    height: 688px;
+    min-height: 688px;
     display: flex;
     align-items: center;
     h2  {
@@ -411,7 +411,7 @@ header{
 }
 .block-popular-services {
     background-color: $white;
-    height: 673px;
+    min-height: 673px;
     display: flex;
     .block-popular-services__headline {
         h1 {
@@ -425,7 +425,7 @@ header{
             letter-spacing: -0.5px;
         }
         p {
-            width: 545px;
+            max-width: 545px;
             font-size: 21px;
             color: $gray-light;
             text-align: center;
@@ -436,11 +436,14 @@ header{
     .block-popular-services__row {
         padding: 92px 0;
         height: 100%;
+        justify-content: center;
     }
     .block-popular-services__item {
         img {
             margin-bottom: 33px;
             width: 100%;
+            max-width: 370px;
+            max-height: 190px;
         }
         h2 {
             font-size: 20px;
@@ -805,6 +808,131 @@ header{
     }
 }
 
+// Large devices (desktops, less than 1200px)
+ @media (max-width: 1199.98px) {  
+    .block-with-rectangle {
+        .img-block {
+            .yellow_rectangle{          
+                width: 230px;
+            }
+            .pikchur_risk{
+                width: 430px;
+                height: 326px;
+            }
+        }
+    }
+    .block-with-rectangle__left {
+        .img-block {
+            margin: 0 7% 0 0;
+        }
+    }
+    .block-with-graphics {
+        img {
+            max-width: 100%;
+        }
+    }
+    .block-popular-services {
+        .block-popular-services__item {
+            img {
+                margin-bottom: 2.75vw;                
+            }
+            h2 {
+                margin-bottom: 1.92vw;
+                font-size: 1.657vw;
+            }
+        }
+    }
+}
+ 
+ // Medium devices (tablets, less than 992px)
+ @media (max-width: 991.98px) { 
+    .block-reviews { 
+    min-height: auto;
+        .block-reviews__content { 
+            p {
+            padding: 0 50px;
+            font-size: 1rem;
+            }
+        }
+    }
+    .block-with-rectangle{
+        .row {
+            .wrap{
+                padding: 3.85rem 0 2rem;
+            }
+            h2  {
+                max-width: 35rem;
+                margin: 0 auto 0.8rem;
+                text-align: center;
+            }
+            h4  {
+                max-width: 40rem;
+                margin: 0 auto 0.8rem;
+                text-align: center;
+            }
+            p   {
+                max-width: 90%;
+                margin: 0 auto 1.5rem;
+                text-align: left;
+            }
+            a   {
+                margin: 0 0 0 5%;
+            }
+            .img-block {
+                margin: 0;
+                padding-bottom: 3.85rem;
+                .yellow_rectangle{          
+                    position: absolute;
+                    width: 153px;
+                    transform: rotate(90deg);
+                    height: 100vw;
+                }
+                .pikchur_risk{
+                    width: 340px;
+                    height: 220px;
+                    position: relative;
+                }
+            }
+        }
+    }
+    .block-with-rectangle__left {        
+        .pikchur_risk {
+            margin-left: auto;
+        }
+    }   
+    .block-show-of p:first-child {
+        font-size: 4.6vw;
+        margin-bottom: 0.7rem;
+    }
+    .block-show-of p:last-child {
+        font-size: 1.32vw;
+    }
+    .block-popular-services {
+        .block-popular-services__item {
+            img {            
+            }
+            h2 { 
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+ // Small devices (landscape phones, less than 768px)
+ @media (max-width: 767.98px) { 
+    .block-with-rectangle .row .wrap p {
+        max-width: 100%;
+    }
+    .block-popular-services__item {
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+    .block-popular-services .block-popular-services__row {
+        padding: 92px 0 60px 0;
+    }
+}
+
  // Extra small devices (portrait phones, less than 576px)
  @media (max-width: 575.98px) { 
     .block-contact-with {
@@ -932,105 +1060,32 @@ header{
             }
         }
     } 
-
-}
- 
- // Small devices (landscape phones, less than 768px)
- @media (max-width: 767.98px) { 
-    .block-with-rectangle .row .wrap p {
-        max-width: 100%;
-    }
-}
-
- 
- // Medium devices (tablets, less than 992px)
- @media (max-width: 991.98px) { 
-    .block-reviews { 
-    min-height: auto;
-        .block-reviews__content { 
+    .block-popular-services .container .block-popular-services__row {
+        padding: 2rem 0;
+        .block-popular-services__headline {
+            h1 {    
+                font-size: 20.3px;
+                margin-bottom: 6.5px;
+            }
             p {
-            padding: 0 50px;
-            font-size: 1rem;
+                font-size: 14px;
+                margin: 0 auto 21.5px;
+            }
+        }
+        .block-popular-services__item {
+            img{
+                margin-bottom: 1rem;
+            }
+            h2 {
+                font-size: 12px;
+                margin-bottom: 4px;
+            }
+            p {
+                font-size: 12px;
+                max-width: 371px;
             }
         }
     }
-    .block-with-rectangle{
-        .row {
-            .wrap{
-                padding: 3.85rem 0 2rem;
-            }
-            h2  {
-                max-width: 35rem;
-                margin: 0 auto 0.8rem;
-                text-align: center;
-            }
-            h4  {
-                max-width: 40rem;
-                margin: 0 auto 0.8rem;
-                text-align: center;
-            }
-            p   {
-                max-width: 90%;
-                margin: 0 auto 1.5rem;
-                text-align: left;
-            }
-            a   {
-                margin: 0 0 0 5%;
-            }
-            .img-block {
-                margin: 0;
-                padding-bottom: 3.85rem;
-                .yellow_rectangle{          
-                    position: absolute;
-                    width: 153px;
-                    transform: rotate(90deg);
-                    height: 100vw;
-                }
-                .pikchur_risk{
-                    width: 340px;
-                    height: 220px;
-                    position: relative;
-                }
-            }
-        }
-    }
-    .block-with-rectangle__left {        
-        .pikchur_risk {
-            margin-left: auto;
-        }
-    }   
-    .block-show-of p:first-child {
-        font-size: 4.6vw;
-        margin-bottom: 0.7rem;
-    }
-    .block-show-of p:last-child {
-        font-size: 1.32vw;
-    }
-}
- // Large devices (desktops, less than 1200px)
- @media (max-width: 1199.98px) {  
-    .block-with-rectangle {
-        .img-block {
-            .yellow_rectangle{          
-                width: 230px;
-            }
-            .pikchur_risk{
-                width: 430px;
-                height: 326px;
-            }
-        }
-    }
-    .block-with-rectangle__left {
-        .img-block {
-            margin: 0 7% 0 0;
-        }
-    }
-}
-.block-with-graphics {
-    img {
-        max-width: 100%;
-    }
-
 }
 
 

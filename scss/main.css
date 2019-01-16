@@ -293,7 +293,7 @@ header {
 
 .block-with-graphics {
   background-color: #f4f4f4;
-  height: 688px;
+  min-height: 688px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +349,7 @@ header {
 
 .block-popular-services {
   background-color: #ffffff;
-  height: 673px;
+  min-height: 673px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -363,7 +363,7 @@ header {
     text-transform: uppercase;
     letter-spacing: -0.5px; }
   .block-popular-services .block-popular-services__headline p {
-    width: 545px;
+    max-width: 545px;
     font-size: 21px;
     color: #666666;
     text-align: center;
@@ -371,10 +371,15 @@ header {
     line-height: 1.2; }
   .block-popular-services .block-popular-services__row {
     padding: 92px 0;
-    height: 100%; }
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .block-popular-services .block-popular-services__item img {
     margin-bottom: 33px;
-    width: 100%; }
+    width: 100%;
+    max-width: 370px;
+    max-height: 190px; }
   .block-popular-services .block-popular-services__item h2 {
     font-size: 20px;
     letter-spacing: 0.3px;
@@ -750,6 +755,82 @@ header {
             box-shadow: none;
     border: none; }
 
+@media (max-width: 1199.98px) {
+  .block-with-rectangle .img-block .yellow_rectangle {
+    width: 230px; }
+  .block-with-rectangle .img-block .pikchur_risk {
+    width: 430px;
+    height: 326px; }
+
+  .block-with-rectangle__left .img-block {
+    margin: 0 7% 0 0; }
+
+  .block-with-graphics img {
+    max-width: 100%; }
+
+  .block-popular-services .block-popular-services__item img {
+    margin-bottom: 2.75vw; }
+  .block-popular-services .block-popular-services__item h2 {
+    margin-bottom: 1.92vw;
+    font-size: 1.657vw; } }
+@media (max-width: 991.98px) {
+  .block-reviews {
+    min-height: auto; }
+    .block-reviews .block-reviews__content p {
+      padding: 0 50px;
+      font-size: 1rem; }
+
+  .block-with-rectangle .row .wrap {
+    padding: 3.85rem 0 2rem; }
+  .block-with-rectangle .row h2 {
+    max-width: 35rem;
+    margin: 0 auto 0.8rem;
+    text-align: center; }
+  .block-with-rectangle .row h4 {
+    max-width: 40rem;
+    margin: 0 auto 0.8rem;
+    text-align: center; }
+  .block-with-rectangle .row p {
+    max-width: 90%;
+    margin: 0 auto 1.5rem;
+    text-align: left; }
+  .block-with-rectangle .row a {
+    margin: 0 0 0 5%; }
+  .block-with-rectangle .row .img-block {
+    margin: 0;
+    padding-bottom: 3.85rem; }
+    .block-with-rectangle .row .img-block .yellow_rectangle {
+      position: absolute;
+      width: 153px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      height: 100vw; }
+    .block-with-rectangle .row .img-block .pikchur_risk {
+      width: 340px;
+      height: 220px;
+      position: relative; }
+
+  .block-with-rectangle__left .pikchur_risk {
+    margin-left: auto; }
+
+  .block-show-of p:first-child {
+    font-size: 4.6vw;
+    margin-bottom: 0.7rem; }
+
+  .block-show-of p:last-child {
+    font-size: 1.32vw; }
+
+  .block-popular-services .block-popular-services__item h2 {
+    font-size: 1rem; } }
+@media (max-width: 767.98px) {
+  .block-with-rectangle .row .wrap p {
+    max-width: 100%; }
+
+  .block-popular-services__item p {
+    margin-bottom: 2rem; }
+
+  .block-popular-services .block-popular-services__row {
+    padding: 92px 0 60px 0; } }
 @media (max-width: 575.98px) {
   .block-contact-with .block-contact-with__row {
     padding-top: 46px; }
@@ -832,66 +913,23 @@ header {
     margin: 0.3rem auto; }
   .footer-wraper .footer__item p {
     margin: 0;
-    text-align: center; } }
-@media (max-width: 767.98px) {
-  .block-with-rectangle .row .wrap p {
-    max-width: 100%; } }
-@media (max-width: 991.98px) {
-  .block-reviews {
-    min-height: auto; }
-    .block-reviews .block-reviews__content p {
-      padding: 0 50px;
-      font-size: 1rem; }
-
-  .block-with-rectangle .row .wrap {
-    padding: 3.85rem 0 2rem; }
-  .block-with-rectangle .row h2 {
-    max-width: 35rem;
-    margin: 0 auto 0.8rem;
     text-align: center; }
-  .block-with-rectangle .row h4 {
-    max-width: 40rem;
-    margin: 0 auto 0.8rem;
-    text-align: center; }
-  .block-with-rectangle .row p {
-    max-width: 90%;
-    margin: 0 auto 1.5rem;
-    text-align: left; }
-  .block-with-rectangle .row a {
-    margin: 0 0 0 5%; }
-  .block-with-rectangle .row .img-block {
-    margin: 0;
-    padding-bottom: 3.85rem; }
-    .block-with-rectangle .row .img-block .yellow_rectangle {
-      position: absolute;
-      width: 153px;
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
-      height: 100vw; }
-    .block-with-rectangle .row .img-block .pikchur_risk {
-      width: 340px;
-      height: 220px;
-      position: relative; }
 
-  .block-with-rectangle__left .pikchur_risk {
-    margin-left: auto; }
-
-  .block-show-of p:first-child {
-    font-size: 4.6vw;
-    margin-bottom: 0.7rem; }
-
-  .block-show-of p:last-child {
-    font-size: 1.32vw; } }
-@media (max-width: 1199.98px) {
-  .block-with-rectangle .img-block .yellow_rectangle {
-    width: 230px; }
-  .block-with-rectangle .img-block .pikchur_risk {
-    width: 430px;
-    height: 326px; }
-
-  .block-with-rectangle__left .img-block {
-    margin: 0 7% 0 0; } }
-.block-with-graphics img {
-  max-width: 100%; }
+  .block-popular-services .container .block-popular-services__row {
+    padding: 2rem 0; }
+    .block-popular-services .container .block-popular-services__row .block-popular-services__headline h1 {
+      font-size: 20.3px;
+      margin-bottom: 6.5px; }
+    .block-popular-services .container .block-popular-services__row .block-popular-services__headline p {
+      font-size: 14px;
+      margin: 0 auto 21.5px; }
+    .block-popular-services .container .block-popular-services__row .block-popular-services__item img {
+      margin-bottom: 1rem; }
+    .block-popular-services .container .block-popular-services__row .block-popular-services__item h2 {
+      font-size: 12px;
+      margin-bottom: 4px; }
+    .block-popular-services .container .block-popular-services__row .block-popular-services__item p {
+      font-size: 12px;
+      max-width: 371px; } }
 
 /*# sourceMappingURL=main.css.map */
