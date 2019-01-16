@@ -301,17 +301,19 @@ header {
       -ms-flex-align: center;
           align-items: center; }
   .block-with-graphics h2 {
-    width: 30rem;
+    max-width: 30rem;
     margin-bottom: 18px; }
   .block-with-graphics h4 {
-    width: 30rem;
+    max-width: 30rem;
     margin-bottom: 18px; }
   .block-with-graphics p {
-    width: 35rem;
+    max-width: 35rem;
     margin-bottom: 2rem;
     line-height: 1.563; }
   .block-with-graphics a {
     padding: 0 0 0.2rem 0; }
+  .block-with-graphics img {
+    max-width: 100%; }
 
 .block-intro-popup {
   display: -webkit-box;
@@ -368,7 +370,8 @@ header {
     margin: 0 auto 43px;
     line-height: 1.2; }
   .block-popular-services .block-popular-services__row {
-    padding: 92px 0; }
+    padding: 92px 0;
+    height: 100%; }
   .block-popular-services .block-popular-services__item img {
     margin-bottom: 33px;
     width: 100%; }
@@ -817,6 +820,14 @@ header {
       height: 100%;
       position: relative; }
 
+  .block-show-of .row .block-show-of-child {
+    padding: 1rem; }
+  .block-show-of .row p:first-child {
+    font-size: 6vw;
+    margin-bottom: 0.7rem; }
+  .block-show-of .row p:last-child {
+    font-size: 2vw; }
+
   .footer-wraper .footer__item ul {
     margin: 0.3rem auto; }
   .footer-wraper .footer__item p {
@@ -866,11 +877,11 @@ header {
     margin-left: auto; }
 
   .block-show-of p:first-child {
-    font-size: 2rem;
+    font-size: 4.6vw;
     margin-bottom: 0.7rem; }
 
   .block-show-of p:last-child {
-    font-size: 13px; } }
+    font-size: 1.32vw; } }
 @media (max-width: 1199.98px) {
   .block-with-rectangle .img-block .yellow_rectangle {
     width: 230px; }
@@ -880,5 +891,7 @@ header {
 
   .block-with-rectangle__left .img-block {
     margin: 0 7% 0 0; } }
+.block-with-graphics img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
