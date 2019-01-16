@@ -880,7 +880,11 @@ header{
 }
  
  // Small devices (landscape phones, less than 768px)
- @media (max-width: 767.98px) {  }
+ @media (max-width: 767.98px) { 
+    .block-with-rectangle .row .wrap h4, .block-with-rectangle .row .wrap h2 {
+        max-width: 90%;
+    }
+}
  
  // Medium devices (tablets, less than 992px)
  @media (max-width: 991.98px) { 
@@ -895,6 +899,9 @@ header{
     }
     .block-with-rectangle{
         .row {
+            .wrap{
+                padding: 3.85rem 0 0;
+            }
             h2  {
                 max-width: 35rem;
                 margin: 0 auto 0.5rem;
@@ -915,19 +922,24 @@ header{
             }
             .img-block {
                 margin: 0;
+                padding-bottom: 3.85rem;
                 .yellow_rectangle{          
                     position: absolute;
-                    width: 230px;
+                    width: 153px;
                     transform: rotate(90deg);
                     height: 100vw;
                 }
                 .pikchur_risk{
-                    width: 430px;
-                    height: 326px;
+                    width: 340px;
+                    height: 220px;
                     position: relative;
-                    opacity: .5;
                 }
             }
+        }
+    }
+    .block-with-rectangle__left {        
+        .pikchur_risk {
+            margin-left: auto;
         }
     }   
 }
