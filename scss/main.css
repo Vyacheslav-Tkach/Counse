@@ -833,18 +833,18 @@ header {
       font-size: 1rem; }
 
   .block-with-rectangle .row .wrap {
-    padding: 3.85rem 0 0; }
+    padding: 3.85rem 0 2rem; }
   .block-with-rectangle .row h2 {
     max-width: 35rem;
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 0.8rem;
     text-align: center; }
   .block-with-rectangle .row h4 {
     max-width: 40rem;
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 0.8rem;
     text-align: center; }
   .block-with-rectangle .row p {
     max-width: 90%;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
     text-align: left; }
   .block-with-rectangle .row a {
     margin: 0 0 0 5%; }
@@ -863,7 +863,14 @@ header {
       position: relative; }
 
   .block-with-rectangle__left .pikchur_risk {
-    margin-left: auto; } }
+    margin-left: auto; }
+
+  .block-show-of p:first-child {
+    font-size: 2rem;
+    margin-bottom: 0.7rem; }
+
+  .block-show-of p:last-child {
+    font-size: 13px; } }
 @media (max-width: 1199.98px) {
   .block-with-rectangle .img-block .yellow_rectangle {
     width: 230px; }
