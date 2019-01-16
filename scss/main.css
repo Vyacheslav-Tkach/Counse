@@ -790,14 +790,41 @@ header {
       width: 1rem;
       margin-bottom: 25px; }
 
+  .block-with-rectangle .container .row .wrap {
+    padding: 2.8rem 0 0.5rem 0; }
+  .block-with-rectangle .container .row h2 {
+    font-size: 20.3px;
+    margin-bottom: 6.5px;
+    max-width: 90%; }
+  .block-with-rectangle .container .row h4 {
+    font-size: 14px;
+    margin: 0 auto 12px; }
+  .block-with-rectangle .container .row p {
+    font-size: 12px;
+    margin-bottom: 0.5rem; }
+  .block-with-rectangle .container .row a {
+    margin: 0 0 0 5%;
+    font-size: 12px; }
+  .block-with-rectangle .container .row .img-block {
+    margin: 0;
+    padding-bottom: 3.85rem; }
+    .block-with-rectangle .container .row .img-block .yellow_rectangle {
+      position: absolute;
+      width: 25%;
+      height: 100vw; }
+    .block-with-rectangle .container .row .img-block .pikchur_risk {
+      width: 60%;
+      height: 100%;
+      position: relative; }
+
   .footer-wraper .footer__item ul {
     margin: 0.3rem auto; }
   .footer-wraper .footer__item p {
     margin: 0;
     text-align: center; } }
 @media (max-width: 767.98px) {
-  .block-with-rectangle .row .wrap h4, .block-with-rectangle .row .wrap h2 {
-    max-width: 90%; } }
+  .block-with-rectangle .row .wrap p {
+    max-width: 100%; } }
 @media (max-width: 991.98px) {
   .block-reviews {
     min-height: auto; }
