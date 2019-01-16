@@ -309,21 +309,24 @@ header{
     }
 }
 .block-with-rectangle{
+    .row {
+        flex-wrap: wrap-reverse;
+    }
     .wrap{
         padding: 5.85rem 0 3.9rem;
     }
     h2  {
-        width: 30rem;
+        max-width: 30rem;
         margin-bottom: 18px;
     }
     h4  {
-        width: 30rem;
+        max-width: 30rem;
         margin-bottom: 18px;
     }
     p   {
         padding: 0;
         margin-bottom: 2rem;
-        width: 34rem;
+        max-width: 34rem;
     }
     a   {
         padding: 0 0 0.2rem 0;
@@ -332,9 +335,11 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 11%;
+        height: 100%;
         .yellow_rectangle{
             background-color: $yellow;
-            height: 520px;
+            height: 100%;
             width: 270px;
             align-items: center;
            
@@ -345,6 +350,11 @@ header{
             position: absolute;
             box-shadow: 0px 2px 5px $gray-dark;
         }
+    }
+}
+.block-with-rectangle__left {
+    .img-block {
+        margin: 0 11% 0 0;
     }
 }
 .block-with-graphics {
@@ -883,9 +893,64 @@ header{
             }
         }
     }
+    .block-with-rectangle{
+        .row {
+            h2  {
+                max-width: 35rem;
+                margin: 0 auto 0.5rem;
+                text-align: center;
+            }
+            h4  {
+                max-width: 40rem;
+                margin: 0 auto 0.5rem;
+                text-align: center;
+            }
+            p   {
+                max-width: 90%;
+                margin: 0 auto 1rem;
+                text-align: left;
+            }
+            a   {
+                margin: 0 0 0 5%;
+            }
+            .img-block {
+                margin: 0;
+                .yellow_rectangle{          
+                    position: absolute;
+                    width: 230px;
+                    transform: rotate(90deg);
+                    height: 100vw;
+                }
+                .pikchur_risk{
+                    width: 430px;
+                    height: 326px;
+                    position: relative;
+                    opacity: .5;
+                }
+            }
+        }
+    }   
 }
  // Large devices (desktops, less than 1200px)
- @media (max-width: 1199.98px) {  }
- 
+ @media (max-width: 1199.98px) {  
+    .block-with-rectangle {
+        .img-block {
+            .yellow_rectangle{          
+                width: 230px;
+            }
+            .pikchur_risk{
+                width: 430px;
+                height: 326px;
+            }
+        }
+    }
+    .block-with-rectangle__left {
+        .img-block {
+            margin: 0 7% 0 0;
+        }
+    }
+}
+
+
  // Extra large devices (large desktops)
  // No media query since the extra-large breakpoint has no upper bound on its width

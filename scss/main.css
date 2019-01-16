@@ -245,18 +245,21 @@ header {
   border-bottom: 2px solid #003366;
   text-decoration: none; }
 
+.block-with-rectangle .row {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse; }
 .block-with-rectangle .wrap {
   padding: 5.85rem 0 3.9rem; }
 .block-with-rectangle h2 {
-  width: 30rem;
+  max-width: 30rem;
   margin-bottom: 18px; }
 .block-with-rectangle h4 {
-  width: 30rem;
+  max-width: 30rem;
   margin-bottom: 18px; }
 .block-with-rectangle p {
   padding: 0;
   margin-bottom: 2rem;
-  width: 34rem; }
+  max-width: 34rem; }
 .block-with-rectangle a {
   padding: 0 0 0.2rem 0; }
 .block-with-rectangle .img-block {
@@ -268,10 +271,12 @@ header {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-left: 11%;
+  height: 100%; }
   .block-with-rectangle .img-block .yellow_rectangle {
     background-color: #fde428;
-    height: 520px;
+    height: 100%;
     width: 270px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -282,6 +287,9 @@ header {
     position: absolute;
     -webkit-box-shadow: 0px 2px 5px #333333;
             box-shadow: 0px 2px 5px #333333; }
+
+.block-with-rectangle__left .img-block {
+  margin: 0 11% 0 0; }
 
 .block-with-graphics {
   background-color: #f4f4f4;
@@ -792,6 +800,43 @@ header {
     min-height: auto; }
     .block-reviews .block-reviews__content p {
       padding: 0 50px;
-      font-size: 1rem; } }
+      font-size: 1rem; }
+
+  .block-with-rectangle .row h2 {
+    max-width: 35rem;
+    margin: 0 auto 0.5rem;
+    text-align: center; }
+  .block-with-rectangle .row h4 {
+    max-width: 40rem;
+    margin: 0 auto 0.5rem;
+    text-align: center; }
+  .block-with-rectangle .row p {
+    max-width: 90%;
+    margin: 0 auto 1rem;
+    text-align: left; }
+  .block-with-rectangle .row a {
+    margin: 0 0 0 5%; }
+  .block-with-rectangle .row .img-block {
+    margin: 0; }
+    .block-with-rectangle .row .img-block .yellow_rectangle {
+      position: absolute;
+      width: 230px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      height: 100vw; }
+    .block-with-rectangle .row .img-block .pikchur_risk {
+      width: 430px;
+      height: 326px;
+      position: relative;
+      opacity: .5; } }
+@media (max-width: 1199.98px) {
+  .block-with-rectangle .img-block .yellow_rectangle {
+    width: 230px; }
+  .block-with-rectangle .img-block .pikchur_risk {
+    width: 430px;
+    height: 326px; }
+
+  .block-with-rectangle__left .img-block {
+    margin: 0 7% 0 0; } }
 
 /*# sourceMappingURL=main.css.map */
