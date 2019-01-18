@@ -14,7 +14,12 @@ $(window).scroll(function() {
     });
 });
 
-
+//  Animation navbar-btn
+$(document).ready(function () { 
+  $('.navbar-btn').on('click', function () {
+    $('.animated-icon').toggleClass('open');
+  });
+});
 
 // #map_little-falls YANDEX MAP JS API
 var spinner1 = $('.ymap-container-1').children('.loader');

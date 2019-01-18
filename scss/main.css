@@ -69,9 +69,6 @@ header {
   width: 100%;
   padding: 3rem 0 0 0; }
 
-.logo {
-  padding-left: 0.35rem; }
-
 .logo img {
   width: 11.44rem; }
 
@@ -85,7 +82,8 @@ header {
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 0; }
   .navigation_list--header li:last-child {
     padding-left: 1.6rem; }
   .navigation_list--header .navigation__item {
@@ -100,7 +98,8 @@ header {
     letter-spacing: 0.06rem; }
   .navigation_list--header .dropdown .btn {
     background: none;
-    margin-right: -0.8rem; }
+    margin-right: -0.8rem;
+    opacity: 0.85; }
   .navigation_list--header .dropdown img {
     width: 2rem; }
   .navigation_list--header .dropdown-toggle::after {
@@ -108,8 +107,83 @@ header {
     color: #ffffff;
     top: 50%; }
 
+.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .dropdown-menu {
-  background-color: transparent; }
+  background-color: transparent;
+  right: 0;
+  left: inherit;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.dropdown-item {
+  padding: .25rem 0rem; }
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  background-color: inherit; }
+
+.animated-icon {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  margin: 5px 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+.animated-icon span {
+  display: block;
+  background: white;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+.animated-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center; }
+
+.animated-icon span:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center; }
+
+.animated-icon span:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center; }
+
+.animated-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0px;
+  left: 4px; }
+
+.animated-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0; }
+
+.animated-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 21px;
+  left: 4px; }
 
 .header-slider .carousel-caption h1 {
   font-size: 51px;
@@ -782,10 +856,46 @@ header {
     margin-bottom: 1.92vw;
     font-size: 1.657vw; } }
 @media (max-width: 991.98px) {
-  .navigation_list--header a {
-    font-size: 12px; }
-  .navigation_list--header .navigation__item {
-    padding-left: 1.5rem; }
+  header {
+    padding: 0; }
+
+  .navbar {
+    padding: 1.2rem 1rem; }
+
+  .container-header {
+    padding: 0;
+    background: #001C37;
+    background: -webkit-gradient(linear, left top, left bottom, from(#001c37), color-stop(rgba(0, 28, 55, 0.8)), color-stop(rgba(0, 28, 55, 0.7)), color-stop(rgba(0, 28, 55, 0.5)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to bottom, #001c37, rgba(0, 28, 55, 0.8), rgba(0, 28, 55, 0.7), rgba(0, 28, 55, 0.5), rgba(0, 0, 0, 0));
+    position: fixed;
+    z-index: 777; }
+
+  .logo img {
+    width: 10rem; }
+
+  .navigation_list--header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .navigation_list--header a {
+      font-size: 12px; }
+    .navigation_list--header .navigation__item {
+      padding-left: 1.5rem;
+      text-shadow: 0 0 2px #001c3780; }
+
+  .dropdown-menu {
+    background: inherit;
+    border: 0; }
+    .dropdown-menu .dropdown-item {
+      text-shadow: 0 0 2px #001c3780; }
 
   .block-reviews {
     min-height: auto; }
@@ -910,6 +1020,9 @@ header {
     text-align: center;
     margin-bottom: 15px; } }
 @media (max-width: 575.98px) {
+  .logo img {
+    width: 8rem; }
+
   .block-contact-with .block-contact-with__row {
     padding-top: 46px; }
     .block-contact-with .block-contact-with__row .block-contact-with__headline h1 {
