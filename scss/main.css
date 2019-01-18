@@ -86,34 +86,27 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.navigation_list--header li:last-child {
-  padding-left: 1.6rem; }
-
-.navigation_list--header .navigation__item {
-  padding-left: 2.7rem; }
-
-.navigation_list--header li {
-  list-style: none; }
-
-.navigation_list--header a {
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.06rem; }
-
-.navigation_list--header .dropdown .btn {
-  background: none;
-  margin-right: -0.8rem; }
-
-.navigation_list--header .dropdown img {
-  width: 2rem; }
-
-.navigation_list--header .dropdown-toggle::after {
-  position: absolute;
-  color: #ffffff;
-  top: 50%; }
+  .navigation_list--header li:last-child {
+    padding-left: 1.6rem; }
+  .navigation_list--header .navigation__item {
+    padding-left: 2.7rem; }
+  .navigation_list--header li {
+    list-style: none; }
+  .navigation_list--header a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem; }
+  .navigation_list--header .dropdown .btn {
+    background: none;
+    margin-right: -0.8rem; }
+  .navigation_list--header .dropdown img {
+    width: 2rem; }
+  .navigation_list--header .dropdown-toggle::after {
+    position: absolute;
+    color: #ffffff;
+    top: 50%; }
 
 .dropdown-menu {
   background-color: transparent; }
@@ -789,6 +782,11 @@ header {
     margin-bottom: 1.92vw;
     font-size: 1.657vw; } }
 @media (max-width: 991.98px) {
+  .navigation_list--header a {
+    font-size: 12px; }
+  .navigation_list--header .navigation__item {
+    padding-left: 1.5rem; }
+
   .block-reviews {
     min-height: auto; }
     .block-reviews .block-reviews__content p {
@@ -883,6 +881,11 @@ header {
   .block-with-graphics .disp-none {
     display: none; } }
 @media (max-width: 767.98px) {
+  .navigation_list--header a {
+    font-size: 8px; }
+  .navigation_list--header .navigation__item {
+    padding-left: 1rem; }
+
   .block-with-rectangle .row .wrap p {
     max-width: 100%; }
 

@@ -125,34 +125,34 @@ header{
     line-height: 2.643;
     justify-content: flex-end;
     align-items: center;
-}
-.navigation_list--header li:last-child {
-    padding-left: 1.6rem;
-}
-.navigation_list--header .navigation__item{
-    padding-left: 2.7rem;
-}
-.navigation_list--header li {
-    list-style: none;
-}
-.navigation_list--header a {
-    font-size: 14px;
-    font-weight: bold;
-    color: $white;
-    text-transform: uppercase;
-    letter-spacing: 0.06rem;
-}
-.navigation_list--header .dropdown .btn{
-    background:none;
-    margin-right: -0.8rem;
-}
-.navigation_list--header .dropdown img {
-    width: 2rem;
-}
-.navigation_list--header .dropdown-toggle::after{
-    position: absolute;
-    color: $white;
-    top: 50%;
+    li:last-child {
+        padding-left: 1.6rem;
+    }
+    .navigation__item{
+        padding-left: 2.7rem;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        font-size: 14px;
+        font-weight: bold;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 0.06rem;
+    }
+    .dropdown .btn{
+        background:none;
+        margin-right: -0.8rem;
+    }
+    .dropdown img {
+        width: 2rem;
+    }
+    .dropdown-toggle::after{
+        position: absolute;
+        color: $white;
+        top: 50%;
+    }
 }
 .dropdown-menu{
     background-color:transparent;
@@ -861,9 +861,16 @@ header{
         }
     }
 }
- 
  // Medium devices (tablets, less than 992px)
  @media (max-width: 991.98px) { 
+    .navigation_list--header {
+        a {
+            font-size: 12px;
+        }
+        .navigation__item {
+            padding-left: 1.5rem;
+        }
+    }
     .block-reviews { 
     min-height: auto;
         .block-reviews__content { 
@@ -995,6 +1002,14 @@ header{
 }
  // Small devices (landscape phones, less than 768px)
  @media (max-width: 767.98px) { 
+    .navigation_list--header {
+        a {
+            font-size: 8px;
+        }
+        .navigation__item {
+            padding-left: 1rem;
+        }
+    }
     .block-with-rectangle .row .wrap p {
         max-width: 100%;
     }
