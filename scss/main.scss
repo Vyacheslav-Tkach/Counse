@@ -204,12 +204,15 @@ header{
         height: 1.5rem;
     }
     .carousel-control-prev {
-        left: 19.15%;
+        height: 100vh;
+        left: 0;
         color: $yellow;
         opacity: 1;
+        height: 100vh;
     }
     .carousel-control-next {
-        left: 19.15%;
+        height: 100vh;
+        left: 0;
         margin-left: 7.375rem; 
         right: inherit;
         color: $yellow;
@@ -246,6 +249,14 @@ header{
     }
     .carousel-control-prev:hover .header-slider_slesh{
         color: $yellow;
+    }
+    .slide-btn {
+        position: absolute;
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0;
+
     }
 }
 .header-text {

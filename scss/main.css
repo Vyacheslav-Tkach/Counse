@@ -156,11 +156,14 @@ header {
 .header-slider .carousel-control-next-icon {
   height: 1.5rem; }
 .header-slider .carousel-control-prev {
-  left: 19.15%;
+  height: 100vh;
+  left: 0;
   color: #fde428;
-  opacity: 1; }
+  opacity: 1;
+  height: 100vh; }
 .header-slider .carousel-control-next {
-  left: 19.15%;
+  height: 100vh;
+  left: 0;
   margin-left: 7.375rem;
   right: inherit;
   color: #fde428;
@@ -190,6 +193,12 @@ header {
   font-size: 0.7rem; }
 .header-slider .carousel-control-prev:hover .header-slider_slesh {
   color: #fde428; }
+.header-slider .slide-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 .header-text {
   display: -webkit-box;
