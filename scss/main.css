@@ -1085,11 +1085,14 @@ header {
     font-size: 22px;
     width: 140px; }
   .header-slider .carousel-control-next {
-    -webkit-animation: move_down 2s ease-in-out infinite;
-            animation: move_down 2s ease-in-out infinite;
+    width: 100%;
     left: 0;
     top: 220px;
-    right: 0; }
+    right: 0;
+    margin: 0 auto; }
+    .header-slider .carousel-control-next .carousel-control-next-icon {
+      -webkit-animation: move_down 2s ease-in-out infinite;
+              animation: move_down 2s ease-in-out infinite; }
   @-webkit-keyframes move_down {
     0% {
       -webkit-transform: translate(-10px, 0);
