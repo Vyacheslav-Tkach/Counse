@@ -21,6 +21,18 @@ $(document).ready(function () {
   });
 });
 
+// swipe header-slider
+var hammer = new Hammer(document.querySelector('.carousel'));
+var $carousel = $(".carousel").carousel({"interval":0});
+hammer.get("swipe");
+hammer.on("swipeleft", function(){
+    $carousel.carousel("next");
+});
+hammer.on("swiperight", function(){
+    $carousel.carousel("prev");
+});
+
+
 // #map_little-falls YANDEX MAP JS API
 var spinner1 = $('.ymap-container-1').children('.loader');
 var check_if_load1 = false;
