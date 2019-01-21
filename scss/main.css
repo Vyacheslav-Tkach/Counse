@@ -1085,14 +1085,19 @@ header {
     font-size: 22px;
     width: 140px; }
 
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    opacity: .3; }
+  .carousel-control-prev-icon {
+    opacity: 0; }
+
+  .carousel-control-next-icon {
+    opacity: 1; }
 
   .header-text {
     width: 215px; }
     .header-text svg {
       width: 160px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      -webkit-animation: move;
+              animation: move; }
     .header-text h1 {
       top: 135px;
       right: 153px; }
@@ -1100,6 +1105,19 @@ header {
       width: 100px;
       top: 230px;
       right: 136px; }
+    .header-text .swap {
+      background-image: url(/img/icon--long-arrow-pointing-to-left.svg);
+      position: absolute;
+      display: block;
+      width: 33px;
+      height: 32px;
+      margin: 0 auto;
+      -webkit-animation: move_down 2s ease-in-out infinite;
+              animation: move_down 2s ease-in-out infinite;
+      background-size: contain;
+      left: 0;
+      right: 0;
+      bottom: 25px; }
 
   .block-contact-with .block-contact-with__row {
     padding-top: 46px; }
