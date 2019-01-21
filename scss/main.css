@@ -1084,7 +1084,34 @@ header {
   .header-slider .carousel-caption h1 {
     font-size: 22px;
     width: 140px; }
-
+  .header-slider .carousel-control-next {
+    -webkit-animation: move_down 2s ease-in-out infinite;
+            animation: move_down 2s ease-in-out infinite;
+    left: 0;
+    top: 220px;
+    right: 0; }
+  @-webkit-keyframes move_down {
+    0% {
+      -webkit-transform: translate(-10px, 0);
+              transform: translate(-10px, 0);
+      opacity: 0; }
+    50% {
+      opacity: 1; }
+    100% {
+      -webkit-transform: translate(10px, 0);
+              transform: translate(10px, 0);
+      opacity: 0; } }
+  @keyframes move_down {
+    0% {
+      -webkit-transform: translate(-10px, 0);
+              transform: translate(-10px, 0);
+      opacity: 0; }
+    50% {
+      opacity: 1; }
+    100% {
+      -webkit-transform: translate(10px, 0);
+              transform: translate(10px, 0);
+      opacity: 0; } }
   .carousel-control-prev-icon {
     opacity: 0; }
 
@@ -1105,19 +1132,6 @@ header {
       width: 100px;
       top: 230px;
       right: 136px; }
-    .header-text .swap {
-      background-image: url(/img/icon--long-arrow-pointing-to-left.svg);
-      position: absolute;
-      display: block;
-      width: 33px;
-      height: 32px;
-      margin: 0 auto;
-      -webkit-animation: move_down 2s ease-in-out infinite;
-              animation: move_down 2s ease-in-out infinite;
-      background-size: contain;
-      left: 0;
-      right: 0;
-      bottom: 25px; }
 
   .block-contact-with .block-contact-with__row {
     padding-top: 46px; }
