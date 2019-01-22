@@ -282,9 +282,9 @@ header {
   overflow: auto;
   clip: inherit; }
 .header-slider .sr-only-previous {
-  margin-left: 23px; }
+  margin-left: 20px; }
 .header-slider .sr-only-next {
-  margin-right: 23px; }
+  margin-right: 20px; }
 .header-slider .sr-only-next::after {
   content: "Next"; }
 .header-slider .header-slider_slesh {
@@ -1134,7 +1134,8 @@ header {
   .header-slider .carousel-control-prev-icon {
     opacity: 0; }
   .header-slider .carousel-control-next-icon, .header-slider .sr-only-next {
-    opacity: 1; }
+    opacity: 1;
+    letter-spacing: 1px; }
   .header-slider .sr-only-next::after {
     content: "Swipe or Tuch"; }
 

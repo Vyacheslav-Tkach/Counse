@@ -309,10 +309,10 @@ header{
         clip: inherit; 
     } 
     .sr-only-previous{
-        margin-left: 23px;
+        margin-left: 20px;
     }
     .sr-only-next{
-        margin-right: 23px;
+        margin-right: 20px;
     }
     .sr-only-next::after{
         content: "Next";
@@ -1231,6 +1231,7 @@ header{
         }
         .carousel-control-next-icon, .sr-only-next {
             opacity: 1;
+            letter-spacing: 1px;
         }
         .sr-only-next::after{
             content: "Swipe or Tuch";
