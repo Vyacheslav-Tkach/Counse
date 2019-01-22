@@ -208,6 +208,7 @@ header {
           justify-content: flex-end; }
 .header-slider .carousel-caption h1 {
   font-size: 51px;
+  word-spacing: 10px;
   font-family: "Montserrat";
   color: #ffffff;
   font-weight: bold;
