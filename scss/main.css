@@ -228,6 +228,7 @@ header {
   line-height: 1.429;
   text-transform: uppercase;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
+  z-index: 11;
   -webkit-transition: .3s;
   transition: .3s; }
 .header-slider .carousel-caption a:hover {
@@ -1096,12 +1097,15 @@ header {
   .header-slider .carousel-caption h1 {
     font-size: 22px;
     width: 140px; }
+  .header-slider .carousel-control-prev {
+    display: none; }
   .header-slider .carousel-control-next {
     width: 100%;
     left: 0;
-    top: 220px;
+    top: 70vh;
     right: 0;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 30vh; }
     .header-slider .carousel-control-next .carousel-control-next-icon {
       -webkit-animation: move_down 2s ease-in-out infinite;
               animation: move_down 2s ease-in-out infinite; }
@@ -1135,7 +1139,9 @@ header {
     content: "Swipe or Tuch"; }
 
   .header-text {
-    width: 215px; }
+    width: 215px;
+    top: 0;
+    margin: 0; }
     .header-text svg {
       width: 160px;
       margin: 0 auto;

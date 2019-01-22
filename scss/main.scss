@@ -243,6 +243,7 @@ header{
         line-height: 1.429; 
         text-transform: uppercase;
         border-bottom: 2px solid rgba(0, 0, 0, 0);
+        z-index: 11;
         transition: .3s;
     }
     .carousel-caption a:hover{
@@ -1205,12 +1206,16 @@ header{
                 width: 140px;
             }
         }
+        .carousel-control-prev {
+            display: none;
+        }
         .carousel-control-next {
             width: 100%;
             left: 0;
-            top: 220px;
-            right: 0;     
+            top: 70vh;
+            right: 0;
             margin: 0 auto;
+            height: 30vh;
             .carousel-control-next-icon {
                 @keyframes move_down {
                     0% {transform:translate(-10px, 0); opacity: 0;}
@@ -1234,6 +1239,8 @@ header{
 
     .header-text {
         width: 215px;
+        top: 0;
+        margin: 0;
         svg {
             width:160px;
             margin: 0 auto;
