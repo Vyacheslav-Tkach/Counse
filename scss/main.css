@@ -124,6 +124,9 @@ header {
     color: #ffffff;
     top: 50%; }
 
+button:focus {
+  outline: none; }
+
 .navbar-collapse {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -1290,5 +1293,4 @@ header {
 @media (max-height: 400px) and (max-width: 991px) {
   .container-header {
     position: relative; } }
-
 /*# sourceMappingURL=main.css.map */

@@ -151,6 +151,9 @@ header{
         top: 50%;
     }
 }
+button:focus {
+    outline: none;
+}
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -1447,6 +1450,7 @@ header{
         }
     }
 }
+// Extra small screen (height min 400px)
 @media (max-height: 400px) and (max-width: 576px){
     .header-slider .carousel-control-next {
         top: 280px;
