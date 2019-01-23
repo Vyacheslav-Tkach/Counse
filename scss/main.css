@@ -1286,8 +1286,8 @@ header {
     display: none; } }
 @media (max-height: 400px) and (max-width: 576px) {
   .header-slider .carousel-control-next {
-    top: 280px; }
-
+    top: 280px; } }
+@media (max-height: 400px) and (max-width: 991px) {
   .container-header {
     position: relative; } }
 
