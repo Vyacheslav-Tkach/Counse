@@ -619,8 +619,8 @@ button:focus {
   transition: .3s;
   opacity: 0; }
 
-.carousel-control-prev:focus,
-.carousel-control-next:focus,
+.block-reviews:focus .carousel-control-prev,
+.block-reviews:focus .carousel-control-next,
 .block-reviews:hover .carousel-control-prev,
 .block-reviews:hover .carousel-control-next {
   opacity: .8;
@@ -1316,4 +1316,5 @@ button:focus {
 @media (max-height: 400px) and (max-width: 991px) {
   .container-header {
     position: relative; } }
+
 /*# sourceMappingURL=main.css.map */
