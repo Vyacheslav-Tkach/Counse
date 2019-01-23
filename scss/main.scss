@@ -642,6 +642,8 @@ button:focus {
         } 
     }
 }
+.block-reviews:focus .carousel-control-prev,
+.block-reviews:focus .carousel-control-next,
 .block-reviews:hover .carousel-control-prev,
 .block-reviews:hover .carousel-control-next {
     opacity: .8;
@@ -1284,7 +1286,7 @@ button:focus {
         }
         h1 {
             top: 135px;
-            right: 153px;
+            right: 138px;
         }
         a {
             width: 90px;

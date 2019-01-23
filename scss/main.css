@@ -601,6 +601,8 @@ button:focus {
       line-height: 1;
       vertical-align: center; }
 
+.block-reviews:focus .carousel-control-prev,
+.block-reviews:focus .carousel-control-next,
 .block-reviews:hover .carousel-control-prev,
 .block-reviews:hover .carousel-control-next {
   opacity: .8;
@@ -1185,7 +1187,7 @@ button:focus {
               animation: move; }
     .header-text h1 {
       top: 135px;
-      right: 153px; }
+      right: 138px; }
     .header-text a {
       width: 90px;
       top: 230px;
