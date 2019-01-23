@@ -22,7 +22,7 @@ $(window).scroll(function() {
 
 // Smooth transition on links
 $(document).ready(function(){
-	$("#navbarText").on("click","a", function (event) {
+	$("#navbarText , .header-text").on("click","a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 		//забираем идентификатор бока с атрибута href
