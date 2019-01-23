@@ -79,19 +79,23 @@ h1, h2, h3, h4 , h5, h6 {
     display: block;
     top: 0;
     height: 100vh;
+    min-height:700px;
     transition: 0.2s;
     .carousel-inner {
         height: 100vh;
+        min-height:700px;
         width: 100%;
         background-color: #021c39;
         img {
             height: 100%;
             width: 100%;
             object-fit: cover;
+            
         }
     }
     .carousel-item {
         height: 100vh;
+        min-height:700px;
     }
 }
 header{
@@ -256,6 +260,7 @@ header{
         text-transform: uppercase;
         font-size: 0.8rem;
         padding: 0 2rem;
+        min-height: 700px;
     }
     .carousel-control-icon  {
         background: none;
@@ -978,6 +983,10 @@ header{
         border: 0;
     }
     .header-slider {
+        min-height: 600px;
+        .carousel-inner, .carousel-item {
+            min-height: 600px;
+        }
         .carousel-caption {
             a {
                 font-size: 1rem;
@@ -1196,7 +1205,12 @@ header{
     .logo img {
         width: 8rem;;  
     }
+   
+       
     .header-slider {
+        min-height: 400px;
+        .carousel-inner, .carousel-item {
+            min-height: 400px;}
         .carousel-caption {
             a {
                 font-size: 12px;
@@ -1216,6 +1230,7 @@ header{
             right: 0;
             margin: 0 auto;
             height: 30vh;
+            min-height: 200px;
             .carousel-control-next-icon {
                 @keyframes move_down {
                     0% {transform:translate(-10px, 0); opacity: 0;}
@@ -1432,7 +1447,8 @@ header{
         }
     }
 }
-
-
- // Extra large devices (large desktops)
- // No media query since the extra-large breakpoint has no upper bound on its width
+@media (max-height: 400px){
+    .header-slider .carousel-control-next {
+        top: 280px;
+    }
+}

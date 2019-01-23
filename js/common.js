@@ -1,18 +1,32 @@
 // .header-wraper PARALLAX
 $(window).scroll(function() {
     var st = $(this).scrollTop();
-    $(".header-text").css({
-        "transform" : "translate(0%, " + st /-6 + "%"
-    });
-    var st = $(this).scrollTop();
-    $(".carousel-control-prev_scroll , .carousel-control-next-scroll").css({
-        "transform" : "translate(0%, " + st /-14 + "%"
-    });
-    var st = $(this).scrollTop();
-    $(".row-header").css({
-        "transform" : "translate(0%, " + st /-1 + "%"
-    });
+    if ($(window).height()>650 && $(window).width()>991 || 
+        $(window).height()>550 && $(window).width()<991 ||
+        $(window).height()>400 && $(window).width()<576 ){
+        $(".header-text").css({
+          "transform" : "translate(0%, " + st /-6 + "%"
+      });
+      var st = $(this).scrollTop();
+      $(".carousel-control-prev_scroll , .carousel-control-next-scroll").css({
+          "transform" : "translate(0%, " + st /-14 + "%"
+      });
+      var st = $(this).scrollTop();
+      $(".row-header").css({
+          "transform" : "translate(0%, " + st /-1 + "%"
+      });
+    }
+    else {
+      // $(".header-slider").css("height", "100%");
+      // $(".header-slider .carousel-inner").css("min-height", "700px");
+      // $(".header-slider .carousel-control-prev").css("min-height", "660px");
+      // $(".header-slider .carousel-control-next").css("min-height", "660px");
+      // $(".header-slider .carousel-item").css({"height" : "100%", "min-height" : "660px"}); 
+    }
 });
+
+
+
 
 //  Animation navbar-btn
 $(document).ready(function () { 
