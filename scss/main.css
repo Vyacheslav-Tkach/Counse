@@ -46,6 +46,25 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1; }
 
+.btn-up {
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-image: url(/img/icon--long-arrow-pointing-to-left.svg);
+  background-color: #003366;
+  border: 10px solid #003366;
+  -webkit-box-shadow: 1px 0px 6px #333333;
+          box-shadow: 1px 0px 6px #333333;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 13; }
+
 .header-wraper {
   position: relative; }
 

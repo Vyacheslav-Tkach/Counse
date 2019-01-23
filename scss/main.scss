@@ -72,6 +72,23 @@ h1, h2, h3, h4 , h5, h6 {
     position: relative;
     z-index: 1;
 }
+.btn-up{
+    display: none;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    transform: rotate(90deg);
+    background-image: url(/img/icon--long-arrow-pointing-to-left.svg);
+    background-color: $dark-blue;
+    border: 10px solid $dark-blue;
+    box-shadow: 1px 0px 6px $gray-dark;
+    border-radius: 50%; 
+    opacity: 0.7; 
+    z-index: 13;
+}
 .header-wraper {
     position: relative;
 }

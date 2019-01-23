@@ -35,6 +35,22 @@ $(document).ready(function(){
 });
 
 
+$(function(){ 
+  $(window).scroll(function(){ 
+  if ($(this).scrollTop()>200 && $(window).width()>576) { 
+  $('.btn-up').fadeIn(); 
+  }
+  else{ 
+  $('.btn-up').fadeOut(); 
+  } 
+  }); 
+  $('.btn-up').click(function(){ 
+  $('body,html').animate({scrollTop:0},600,);
+      return false;
+  }); 
+  }); 
+
+
 //  Animation navbar-btn
 $(document).ready(function () { 
   $('.navbar-btn').on('click', function () {
