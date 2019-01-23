@@ -643,13 +643,6 @@ button:focus {
         } 
     }
 }
-.block-reviews:focus .carousel-control-prev,
-.block-reviews:focus .carousel-control-next,
-.block-reviews:hover .carousel-control-prev,
-.block-reviews:hover .carousel-control-next {
-    opacity: .8;
-    transition: .3s;
-}
 .block-reviews__carousel-control{
     .carousel-control-prev{
         justify-content: flex-start;
@@ -664,6 +657,14 @@ button:focus {
         opacity: 0;
     }
 }
+.carousel-control-prev:focus,
+.carousel-control-next:focus,
+.block-reviews:hover .carousel-control-prev,
+.block-reviews:hover .carousel-control-next {
+    opacity: .8;
+    transition: .3s;
+}
+
 .block-contact-with{
     background-color: $white;
     height: 100%;
