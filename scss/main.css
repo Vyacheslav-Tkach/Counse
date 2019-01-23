@@ -221,7 +221,7 @@ button:focus {
           justify-content: flex-end; }
 .header-slider .carousel-caption h1 {
   font-size: 51px;
-  word-spacing: 10px;
+  word-spacing: 30px;
   font-family: "Montserrat";
   color: #ffffff;
   font-weight: bold;
@@ -1293,4 +1293,5 @@ button:focus {
 @media (max-height: 400px) and (max-width: 991px) {
   .container-header {
     position: relative; } }
+
 /*# sourceMappingURL=main.css.map */
