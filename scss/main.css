@@ -619,8 +619,6 @@ button:focus {
   transition: .3s;
   opacity: 0; }
 
-.block-reviews:focus .carousel-control-prev,
-.block-reviews:focus .carousel-control-next,
 .block-reviews:hover .carousel-control-prev,
 .block-reviews:hover .carousel-control-next {
   opacity: .8;
@@ -1309,7 +1307,13 @@ button:focus {
   .block-with-graphics a {
     font-size: 12px; }
   .block-with-graphics .disp-none {
-    display: none; } }
+    display: none; }
+
+  .block-reviews .carousel-control-prev,
+  .block-reviews .carousel-control-next {
+    opacity: .8;
+    -webkit-transition: .3s;
+    transition: .3s; } }
 @media (max-height: 400px) and (max-width: 576px) {
   .header-slider .carousel-control-next {
     top: 280px; } }

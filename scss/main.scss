@@ -657,8 +657,6 @@ button:focus {
         opacity: 0;
     }
 }
-.block-reviews:focus .carousel-control-prev,
-.block-reviews:focus .carousel-control-next,
 .block-reviews:hover .carousel-control-prev,
 .block-reviews:hover .carousel-control-next {
     opacity: .8;
@@ -1228,9 +1226,7 @@ button:focus {
  @media (max-width: 575.98px) { 
     .logo img {
         width: 8rem;;  
-    }
-   
-       
+    }   
     .header-slider {
         min-height: 400px;
         .carousel-inner, .carousel-item {
@@ -1276,7 +1272,6 @@ button:focus {
             content: "Swipe or Tuch";
         }
     }
-
     .header-text {
         width: 215px;
         top: 0;
@@ -1471,7 +1466,13 @@ button:focus {
           display: none;
         }
     }
+    .block-reviews .carousel-control-prev,
+    .block-reviews .carousel-control-next {
+    opacity: .8;
+    transition: .3s;
+    }
 }
+
 // Extra small screen (height min 400px)
 @media (max-height: 400px) and (max-width: 576px){
     .header-slider .carousel-control-next {
