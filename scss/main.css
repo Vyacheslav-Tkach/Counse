@@ -158,7 +158,8 @@ button:focus {
   text-align: right;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  border: 0; }
 
 .dropdown-menu .dropdown-item {
   padding: .7rem 0 0 0;
