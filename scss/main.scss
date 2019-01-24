@@ -72,6 +72,9 @@ h1, h2, h3, h4 , h5, h6 {
     position: relative;
     z-index: 1;
 }
+.btn {
+    border-radius: 0;
+}
 .btn-up{
     display: none;
     position: fixed;
@@ -522,6 +525,7 @@ button:focus {
             height: 44px;
             background-color: $yellow; 
             font-size: 17px;
+            border-radius: .25rem;
             color: $dark-blue;
             font-weight: bold;
             text-transform: uppercase;
